@@ -1,5 +1,6 @@
 import { Typography } from '@material-ui/core'
 import { Box, Button, Grid, TextField } from '@mui/material'
+import { Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom'
 import './Cadastro.css'
 
@@ -53,9 +54,11 @@ function Cadastro() {
               />
 
               <Box display='flex' justifyContent='space-around' marginTop={2}>
+                <Link to='/login'>
                   <Button type="submit" variant="contained" color="primary">
                     Cadastrar
                   </Button>
+                </Link>
               </Box>
             </form>
           </Grid>
@@ -64,5 +67,6 @@ function Cadastro() {
 
       </Grid>
     </>
-
-export default Cadastro
+  )
+};
+export default Cadastro;
