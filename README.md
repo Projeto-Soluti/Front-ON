@@ -16,8 +16,6 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
 
 **:construction: Projeto em construção :construction:**
 
-<img align="center" alt="" height="120" width="150" src="https://user-images.githubusercontent.com/105940878/189463492-3997365e-257d-4418-b7ec-0718c4731b6e.gif">
-
 ##
 
 ## **👩‍💻 DESENVOLVEDORES 👨‍💻**
