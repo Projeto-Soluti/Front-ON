@@ -1,7 +1,9 @@
 # SolutiON
 
 Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da [Generation Brasil](https://brazil.generation.org/ ), cujo propósito centra-se na promoção de uma rede estratégica e ágil para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030. 
-<br>
+
+<br><br>
+
 Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9.
 
 ### Tecnologias:
