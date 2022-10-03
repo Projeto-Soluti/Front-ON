@@ -5,6 +5,8 @@ Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da 
 
 Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9.
 
+##
+
 ### TECNOLOGIA
 
 <div style="display: inline_block">
