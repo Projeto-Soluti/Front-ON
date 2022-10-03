@@ -18,7 +18,7 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
 
 ##
 
-## **👩‍💻 DESENVOLVEDORES 👨‍💻**
+### **👩‍💻 DESENVOLVEDORES 👨‍💻**
 
 <div align=center>
 
