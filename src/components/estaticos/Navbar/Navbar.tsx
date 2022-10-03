@@ -4,8 +4,6 @@ import React from 'react';
 import { AccountCircle } from '@material-ui/icons';
 import { Box } from '@mui/material';
 
-
-
 function Navbar(){
     return (
  

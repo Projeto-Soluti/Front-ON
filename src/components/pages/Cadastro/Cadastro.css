@@ -1,0 +1,7 @@
+.bg-cadastro {
+    min-height: 100vh;
+    background-image: url ('<a href="https://storyset.com/online" >Online illustrations by Storyset</a>');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
