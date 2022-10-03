@@ -64,7 +64,5 @@ function Cadastro() {
 
       </Grid>
     </>
-  )
-}
 
 export default Cadastro
