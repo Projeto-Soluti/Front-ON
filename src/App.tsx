@@ -1,6 +1,7 @@
 import React from 'react';
+// import Footer from './components/estaticos/Footer/Footer';
+// import Navbar from './components/estaticos/Navbar/Navbar';
 //import './App.css';//
-//import Navbar from './components/estaticos/Navbar/Navbar'//
 
 function App() {
   return (
