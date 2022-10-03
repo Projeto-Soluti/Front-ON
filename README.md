@@ -14,7 +14,7 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
 ##
 ### Status:
 
-** :construction: Projeto em construção :construction: **
+**:construction: Projeto em construção :construction:**
 
 ##
 
