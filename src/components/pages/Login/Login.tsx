@@ -2,6 +2,7 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import { Box } from '@mui/material';
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -41,16 +42,20 @@ function Login() {
               {" "}
             </TextField>
             <Box marginTop={2} textAlign="center">
-            <Button type="submit" variant="contained" color="primary">
-                    Entrar
-                  </Button>
+            <Link to='/home'>
+              <Button type="submit" variant="contained" color="primary">
+                Entrar
+              </Button>
+            </Link>      
             </Box>
           </form>
           <Box display='flex' justifyContent='center' marginTop={2}>
             <Box marginRight={1}>
                 <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta ?</Typography>
             </Box>
-                <Typography variant="subtitle1" gutterBottom align="center" className="textos1" color="inherit">Cadastre-se</Typography>
+            <Link to="/cadastrar" style={{ textDecoration: "none" }}>
+                <Typography>Cadastre-se</Typography>
+            </Link>
           </Box>
         </Box>
         
