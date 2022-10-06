@@ -44,13 +44,11 @@ function Login() {
         }
     }
 
-
-
     return (
         <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
                 <Box paddingX={20} alignItems="center" >
-                    <form>
+                    <form onSubmit={onSubmit}>
                         <Typography variant="h3" gutterBottom /*margem inferior*/ color="textPrimary" component="h3" align="center" className="bold" >Entrar</Typography>
 
                         <TextField
