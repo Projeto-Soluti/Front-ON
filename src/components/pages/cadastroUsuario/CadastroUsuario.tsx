@@ -53,29 +53,29 @@ function CadastroUsuario() {
         event.preventDefault()
         if(confirmarSenha === user.senha) {
             cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)
-            alert('Usuário cadastrado com sucesso!')
+            alert('Empresa cadastrada com sucesso!')
         } else {
-            alert('Dados inconsistentes! Favor verificar as informações de cadastro.')
+            alert('Dados inconsistentes! Por favor, verificar as informações de cadastro.')
         }
     }
     
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' >
+        <Grid container className="container"  >
                 <Grid item xs={6} className='imagem2'></Grid>
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
                         <form onSubmit={confirmar}>
-                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
+                            <Typography variant='h3' gutterBottom component='h3' className='textos2'>Cadastrar</Typography>
 
-                            <TextField value={user.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth />
+                            <TextField value={user.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='nome' label='Nome da empresa' variant='outlined' name='nome' margin='normal' fullWidth />
 
-                            <TextField value={user.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                            <TextField value={user.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='usuario' label='Usuário (e-mail)' variant='outlined' name='usuario' margin='normal' fullWidth />
 
-                            <TextField value={user.cnpj} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='cnpj' label='cnpj' variant='outlined' name='cnpj' margin='normal' type='password' fullWidth />
+                            <TextField value={user.cnpj} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='cnpj' label='CNPJ (XX.XXX.XXX/XXXX-XX)' variant='outlined' name='cnpj' margin='normal' fullWidth />
 
-                            <TextField value={user.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                            <TextField value={user.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
 
-                            <TextField value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                            <TextField value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} id='confirmarSenha' label='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
 
                             <Box marginTop={2} textAlign='center'>
                                 <Link to='/login' className='text-decorator-none'>
@@ -86,7 +86,6 @@ function CadastroUsuario() {
                                     <Button type='submit' variant='contained' className='cadastrar' >
                                         Cadastrar
                                     </Button>
-
                             </Box>
                         </form>
                     </Box>

@@ -1,5 +1,5 @@
 .bold {
-    font-weight: bold !important
+    font-weight: bold !important;
 }
 
 .imagem {
@@ -14,4 +14,21 @@
 
 .text-decorator-none{
     text-decoration: none !important;
+}
+
+.container {
+    direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logar {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.orientacoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
 }

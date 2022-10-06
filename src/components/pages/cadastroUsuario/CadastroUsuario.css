@@ -8,6 +8,7 @@
 
 .textos2 {
     font-weight: bold !important;
+    text-align: center;
 }
 
 .text-decorator-none {
@@ -23,4 +24,10 @@
 .cadastrar {
     background-color: #8a2be2 !important;
     color: white !important;
+}
+
+.container {
+    direction: row;
+    justify-content: center;
+    align-items: center;
 }
