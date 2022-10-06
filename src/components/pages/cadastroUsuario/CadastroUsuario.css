@@ -1,0 +1,26 @@
+.imagem2 {
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover; 
+    background-position: center;
+}
+
+.textos2 {
+    font-weight: bold !important;
+}
+
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.btnCancelar {
+    background-color: #e83c1e !important;
+    color: white !important;
+    margin-right: 20px !important;
+}
+
+.cadastrar {
+    background-color: #8a2be2 !important;
+    color: white !important;
+}
