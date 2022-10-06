@@ -1,26 +1,28 @@
-import { Grid, Typography } from "@material-ui/core";
-import React from "react";
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Box } from '@mui/material';
-import './Footer.css';
+import { Grid, Typography } from "@material-ui/core"
+import React from "react"
+import InstagramIcon from '@material-ui/icons/Instagram'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import { Box } from '@mui/material'
+import './Footer.css'
+
+
 function Footer (){
     return(
         <>
         
-        <Grid container direction="row" justifyContent="center" alignItems="center" style={{backgroundColor: "#EFACC8"}}>
+            <Grid container className="container"  >
                 <Grid alignItems="center" item xs={12}>
                     <Box className="box1">
-                        <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom className="textos">Siga-nos nas redes sociais </Typography>
+                        <Box className="subbox">
+                            <Typography variant="h5" gutterBottom className="textos">Siga-nos nas redes sociais </Typography>
                         </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                <FacebookIcon className="redes" />
-                            </a>
+                        <Box className="sociais">
                             <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                 <InstagramIcon className="redes" />
+                            </a>
+                            <a href="https://github.com/Projeto-Soluti" target="_blank">
+                                <GitHubIcon style={{ fontSize: 48, color: "white" }} />
                             </a>
                             <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
                                 <LinkedInIcon className="redes" />
@@ -29,11 +31,12 @@ function Footer (){
                     </Box>
                     <Box className="box2">
                         <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom className="textos" >© 2022 Copyright:</Typography>
+                            <Typography variant="subtitle2" gutterBottom className="textos">© 2022 Copyright</Typography>
                         </Box>
                         <Box>
-                            <a target="_blank" href="https://brasil.generation.org">
-                                <Typography variant="subtitle2" gutterBottom className="textos" align="center">brasil.generation.org</Typography>
+                            {/* <hr></hr> */}
+                            <a>
+                                <Typography variant="subtitle2" gutterBottom className="textos">SolutiON</Typography>
                             </a>
                         </Box>
                     </Box>
@@ -42,7 +45,6 @@ function Footer (){
 
         </>
     )
-
 }
 
-export default Footer;
+export default Footer
