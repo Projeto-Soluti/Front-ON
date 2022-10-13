@@ -1,0 +1,23 @@
+.logo {
+    border-radius: 50%;
+    padding: 0.5vw;
+}
+
+.caixa {
+    background-color: #e3a731;
+}
+
+.titulo {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.botao {
+    border-color: #000000 !important;
+    background-color: #140e19;
+    color: white !important;
+}
+
+.postagens {
+    background-color: white;
+}
