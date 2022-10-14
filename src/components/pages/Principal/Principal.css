@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap') */
+
+* {
+    margin: 0 auto; 
+    padding: 0;   
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    flex-direction: column;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 19px;
+}
+
+li a {
+    text-decoration: none;
+    color: #022534;
+    margin-right: -8px;
+}
+
+a:hover {
+    color: #5006d0;
+    transition: 0.3s;
+}
+
+.login {
+    border: 2px solid #022534;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+}
+
+.login:hover {
+    background-color: #022534;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    margin-top: 100px;
+}
+
+article img {
+    width: 700px;
+    height: 550px;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h2 span {
+    color: #5006d0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 500px;
+}
+
+.enviar {
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: #022534;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input [type="submit"] {
+    height: 50px;
+    width: 50%;
+}
