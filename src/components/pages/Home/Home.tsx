@@ -1,22 +1,25 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect, useState } from 'react';
 import { Grid, Typography, Button } from '@material-ui/core';
 import Box from '@mui/material/Box';
 import './Home.css';
 import { Link, useNavigate } from 'react-router-dom';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { TokenState } from '../../../store/token/TokenReducer';
+// import useLocalStorage from 'react-use-localstorage';
 
 function Home() {
 
     let navigate = useNavigate();
-    /*const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );*/
+    // const token = useSelector<TokenState, TokenState['token']>(
+    //     (state) => state.token
+    // )
 
-    /*useEffect(() => {
-        if (token == '') {
-            alert("Você precisa estar logado")
-            navigate("/login")
-        }
-    }, [token])*/
+    // useEffect(() => {
+    //     if (token == '') {
+    //         alert("Você precisa estar logado")
+    //         navigate("/login")
+    //     }
+    // }, [token])
 
     return (
         <>
@@ -26,6 +29,20 @@ function Home() {
                         <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Seja Bem-Vindo ao SolutiON!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Sua interface de comunicação empresarial</Typography>
                     </Box>
+                    {/* <Box>
+                        <Link to='/listaTema'>
+                        <Button >
+                            Tema
+                        </Button>
+                        </Link>
+                    </Box>
+                    <Box>
+                        <Link to='/postagens'>
+                        <Button >
+                            Postagens
+                        </Button>
+                        </Link>
+                    </Box> */}
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
