@@ -50,7 +50,7 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
     </td>
     <td>
       <a href="https://github.com/viniciuslopes98">
-        <img width="200" src="https://user-images.githubusercontent.com/105940878/189456633-c9940b98-94af-498a-a6fb-e6d9344a068b.png">
+        <img width="200" src="https://user-images.githubusercontent.com/105940878/195605107-2d703ee0-666d-47f3-af08-4ae89ec679ae.png">
       </a>
     </td>
       <td>

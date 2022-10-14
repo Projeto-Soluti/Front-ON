@@ -4,46 +4,52 @@ import { Box } from '@mui/material'
 import { Link, useNavigate } from "react-router-dom"
 import './Login.css'
 import UserLogin from '../../models/UserLogin';
-import useLocalStorage from 'react-use-localstorage'
 import { login } from '../../services/Service'
+// import { Action, addToken } from '../../../store/token/Action';
+// import { useDispatch } from 'react-redux';
 
 
 function Login() {
-    let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
-    const [userLogin, setUserLogin] = useState<UserLogin>(  
-        {
-            id: 0,
-            usuario: '',
-            senha: '',
-            token: ''
-        }
-    )
 
-    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+  // let navigate = useNavigate()
+  // const dispatch = useDispatch();
+  // const [token, setToken] = useState('')
+  // const [userLogin, setUserLogin] = useState<UserLogin>({
+  //   id: 0,
+  //   nome: '',
+  //   usuario: '',
+  //   cnpj: '',
+  //   senha: '',
+  //   foto: '',
+  //   token: ''
+  // });
 
-        setUserLogin({
-            ...userLogin, 
-            [e.target.name]: e.target.value 
-        })
-    }
+  // function updatedModel(e: ChangeEvent<HTMLInputElement>){
+  //   setUserLogin({
+  //     ...userLogin,
+  //     [e.target.name]: e.target.value
+  //   })
+  // }
 
-    useEffect(() => {
-        if (token !== '') {
-            navigate('/home');
-        }
-    }, [token]); 
+  // async function onSubmit(event: ChangeEvent<HTMLFormElement>){
+  //   event.preventDefault();
+  //   try{
+  //     await login('usuarios/logar', userLogin, setToken)
+
+  //     alert('Logado com Sucesso!!!');
+  //   }catch(error){
+  //     alert('Dados do usuário inconsistentes. Erro ao Logar!')
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   if(token !== ''){
+  //     dispatch(addToken(token));
+  //     navigate('/home')
+  //   }
+  // }, [token])
 
 
-    async function onSubmit(e: ChangeEvent<HTMLFormElement>) { 
-        e.preventDefault(); 
-        try {
-            await login(`/usuarios/logar`, userLogin, setToken)
-            alert('Usuário logado com sucesso!');
-        } catch (error) {
-            alert('Dados de usuário inválidos! Tente novamente.')
-        }
-    }
 
 
 
@@ -107,3 +113,4 @@ function Login() {
 }
 
 export default Login
+

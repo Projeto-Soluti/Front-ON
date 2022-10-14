@@ -4,7 +4,6 @@ interface User {
     usuario: string;
     cnpj: string;
     senha: string;
-    foto: string;
 }
 
 export default User;
