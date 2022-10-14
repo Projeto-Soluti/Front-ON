@@ -19,7 +19,7 @@ function CadastroUsuario() {
             usuario: '',
             cnpj: '',
             senha:'',
-            foto: ''
+            
         })
 
     const [userResult, setUserResult] = useState<User>(
@@ -29,7 +29,6 @@ function CadastroUsuario() {
             usuario: '',
             cnpj: '',
             senha:'',
-            foto: ''
         })
 
     useEffect(() => {
@@ -52,7 +51,7 @@ function CadastroUsuario() {
     async function confirmar(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault()
         if(confirmarSenha === user.senha) {
-            cadastroUsuario(`usuarios/cadastrar`, user, setUserResult)
+            // cadastroUsuario('usuarios/cadastrar', user, setUserResult)
             alert('Empresa cadastrada com sucesso!')
         } else {
             alert('Dados inconsistentes! Por favor, verificar as informações de cadastro.')
