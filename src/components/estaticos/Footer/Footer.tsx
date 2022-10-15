@@ -1,98 +1,61 @@
-import React from "react";
-import {AppBar, Toolbar, Typography} from "@material-ui/core";
-import {Link,  useNavigate} from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux";
-//import { TokenState } from "../../../store/tokens/tokensReducer";//
-//import { addToken } from "../../../store/tokens/actions";//
-import {toast} from 'react-toastify';
-import { Box } from "@mui/material";
-import './Navbar.css';
-import { addToken } from "../../../store/token/Action";
+import { Grid, Typography } from "@material-ui/core";
+import { Box } from '@mui/material'
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import './Footer.css';
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/token/TokenReducer";
 
-function Navbar() {
-
-   // const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );//
+function Footer (){
     
-    let navigate = useNavigate();
-    const dispatch = useDispatch();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+       )
 
-    function goLogout() {
-        dispatch(addToken(''));
-        toast.info('Usuário deslogado', {
-            position: 'top-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
-        });
-        
-        navigate('/login')
-    }
+       var footerComponent;
 
-    var navBarComponent;
-    if(token !== "") {
-        navBarComponent = <AppBar position="static">
-        <Toolbar className='toolbar'>
-            <Box className='blogPessoal'>
-                <Box className='cursor'>
-                    <Typography variant="h5" color="inherit">
-                        Blog Pessoal
-                    </Typography>
+       if(token != ""){
+        footerComponent = <Grid container direction="row" justifyContent="center" alignItems="center"  >
+        <Grid alignItems="center" item xs={12} >
+            <Box className="box1">
+                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                    <Typography variant="h5" align="center" gutterBottom className="textos">Siga-nos nas redes sociais </Typography>
+                </Box>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                        <FacebookIcon className="redes" />
+                    </a>
+                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                        <InstagramIcon className="redes" />
+                    </a>
+                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                        <LinkedInIcon className="redes" />
+                    </a>
                 </Box>
             </Box>
-
-            <Box className='menu'>
-                <Link to='/home' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Home
-                        </Typography>
-                    </Box>
-                </Link>
-                <Link to='/posts' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Postagens
-                        </Typography>
-                    </Box>
-                </Link>
-                <Link to='/temas' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Temas
-                        </Typography>
-                    </Box>
-                </Link>
-                <Link to='/formularioTema' className='text-decorator-none'>
-                    <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
-                            Cadastrar Tema
-                        </Typography>
-                    </Box>
-                </Link>
-
-                    <Box mx={1} className='cursor' onClick={goLogout}>
-                        <Typography variant="h6" color="inherit">
-                            Logout
-                        </Typography>
-                    </Box>
-
+            <Box className="box2">
+                <Box paddingTop={1}>
+                    <Typography variant="subtitle2" align="center" gutterBottom className="textos" >© 2020 Copyright:</Typography>
+                </Box>
+                <Box>
+                    <a target="_blank" href="https://brasil.generation.org">
+                        <Typography variant="subtitle2" gutterBottom className="textos" align="center">brasil.generation.org</Typography>
+                    </a>
+                </Box>
             </Box>
-        </Toolbar>
-    </AppBar>
-        
-    }
+        </Grid>
+    </Grid>
+       }
 
     return(
         <>
-          {navBarComponent}  
+        
+        {footerComponent}
+
         </>
     )
+
 }
 
-export default Navbar;
+export default Footer;
