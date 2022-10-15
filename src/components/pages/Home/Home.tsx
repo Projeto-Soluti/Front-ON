@@ -13,8 +13,8 @@ import TabPostagem from '../../postagem/tabPostagem/TabPostagem';
 function Home() {
 
     let navigate = useNavigate();
-    const token = useSelector<TokenState, TokenState["token"]>(
-        (state) => state.token
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
     );
 
     useEffect(() => {
@@ -39,6 +39,7 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalTema />
                         </Box>
+                        
                     </Box>
                 </Grid>
                 <Grid item xs={6} className="divlogo">

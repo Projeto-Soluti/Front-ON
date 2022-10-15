@@ -19,6 +19,7 @@ function CadastroUsuario() {
             usuario: '',
             cnpj: '',
             senha:'',
+            foto: '',
             
         })
 
@@ -29,6 +30,7 @@ function CadastroUsuario() {
             usuario: '',
             cnpj: '',
             senha:'',
+            foto: '',
         })
 
     useEffect(() => {

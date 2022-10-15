@@ -10,8 +10,8 @@ function DeletarPostagem() {
 
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   const [postagem, setPostagem] = useState<Postagem>();

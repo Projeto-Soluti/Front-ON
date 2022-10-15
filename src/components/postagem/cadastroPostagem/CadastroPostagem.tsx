@@ -12,11 +12,8 @@ function CadastroPostagem() {
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>()
   const [temas, setTemas] = useState<Tema[]>([]);
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
-  )
-  const userId = useSelector<TokenState, TokenState['id']>(
-    (state) => state.id
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   const [tema, setTema] = useState<Tema>({
@@ -28,6 +25,7 @@ function CadastroPostagem() {
     id: 0,
     titulo: '',
     texto: '',
+    data: '',
     tema: null,
   })
 
@@ -76,27 +74,30 @@ function CadastroPostagem() {
   async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if(id !== undefined) {
-      try {
-        await put(`/postagens`, postagem, setPostagem, {
-          headers: {'Authorization': token,},
-        });
-        alert('Postagem atualizada com sucesso')
-      } catch (error) {
-        alert('Erro ao atualizar, verifique os campos');
-      }
+    if (id !== undefined) {
+        put(`/postagens`, postagem, setPostagem, {
+            headers: { 
+                Authorization: token 
+            },
+        })
+        alert('Atualizado')
+       
+
     } else {
-      try {
-        await post(`/postagens`, postagem, setPostagem, {
-          headers: {'Authorization': token}
-        });
-        alert('Postagem cadastrada com sucesso!!')
-      } catch(error){
-        alert('Erro ao Postar, verifique os campos e tente novamente!!')
-      }
+        post(`/postagens`, postagem, setPostagem, {
+            headers: { 
+                Authorization: token 
+            },
+          })
+          alert("Postado")
+          
     }
+    back()
+}
+
+function back() {
     navigate('/postagens')
-  }
+}
 
 
   return (

@@ -1,11 +1,11 @@
 interface UserLogin {
     id: number;
-    // nome: string,
+    nome: string,
     usuario: string;
-    // cnpj: string,
+    cnpj: string,
     senha: string;
-    // foto: string,
-    // token: string
+    foto: string,
+    token: string
     
     }
     
