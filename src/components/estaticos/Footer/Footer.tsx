@@ -1,50 +1,98 @@
-import { Grid, Typography } from "@material-ui/core"
-import React from "react"
-import InstagramIcon from '@material-ui/icons/Instagram'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import { Box } from '@mui/material'
-import './Footer.css'
+import React from "react";
+import {AppBar, Toolbar, Typography} from "@material-ui/core";
+import {Link,  useNavigate} from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+//import { TokenState } from "../../../store/tokens/tokensReducer";//
+//import { addToken } from "../../../store/tokens/actions";//
+import {toast} from 'react-toastify';
+import { Box } from "@mui/material";
+import './Navbar.css';
+import { addToken } from "../../../store/token/Action";
 
+function Navbar() {
 
-function Footer (){
+   // const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );//
+    
+    let navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    function goLogout() {
+        dispatch(addToken(''));
+        toast.info('Usuário deslogado', {
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
+        
+        navigate('/login')
+    }
+
+    var navBarComponent;
+    if(token !== "") {
+        navBarComponent = <AppBar position="static">
+        <Toolbar className='toolbar'>
+            <Box className='blogPessoal'>
+                <Box className='cursor'>
+                    <Typography variant="h5" color="inherit">
+                        Blog Pessoal
+                    </Typography>
+                </Box>
+            </Box>
+
+            <Box className='menu'>
+                <Link to='/home' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                            Home
+                        </Typography>
+                    </Box>
+                </Link>
+                <Link to='/posts' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                            Postagens
+                        </Typography>
+                    </Box>
+                </Link>
+                <Link to='/temas' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                            Temas
+                        </Typography>
+                    </Box>
+                </Link>
+                <Link to='/formularioTema' className='text-decorator-none'>
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                            Cadastrar Tema
+                        </Typography>
+                    </Box>
+                </Link>
+
+                    <Box mx={1} className='cursor' onClick={goLogout}>
+                        <Typography variant="h6" color="inherit">
+                            Logout
+                        </Typography>
+                    </Box>
+
+            </Box>
+        </Toolbar>
+    </AppBar>
+        
+    }
+
     return(
         <>
-        
-            <Grid container className="container"  >
-                <Grid alignItems="center" item xs={12}>
-                    <Box className="box1">
-                        <Box className="subbox">
-                            <Typography variant="h5" gutterBottom className="textos">Siga-nos nas redes sociais </Typography>
-                        </Box>
-                        <Box className="sociais">
-                            <a href="https://www.instagram.com/generationbrasil/" target="_blank">
-                                <InstagramIcon className="redes" />
-                            </a>
-                            <a href="https://github.com/Projeto-Soluti" target="_blank">
-                                <GitHubIcon style={{ fontSize: 48, color: "white" }} />
-                            </a>
-                            <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
-                                <LinkedInIcon className="redes" />
-                            </a>
-                        </Box>
-                    </Box>
-                    <Box className="box2">
-                        <Box paddingTop={1}>
-                            <Typography variant="subtitle2" gutterBottom className="textos">© 2022 Copyright</Typography>
-                        </Box>
-                        <Box>
-                            {/* <hr></hr> */}
-                            <a>
-                                <Typography variant="subtitle2" gutterBottom className="textos">SolutiON</Typography>
-                            </a>
-                        </Box>
-                    </Box>
-                </Grid>
-            </Grid>
-
+          {navBarComponent}  
         </>
     )
 }
 
-export default Footer
+export default Navbar;
