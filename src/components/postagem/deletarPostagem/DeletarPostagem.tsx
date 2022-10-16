@@ -2,16 +2,18 @@ import { Box, Button, Card, CardActions, CardContent, Typography } from '@mui/ma
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom'
-import { TokenState } from '../../../store/token/TokenReducer';
-import Postagem from '../../models/Postagem';
-import { buscaId, deleteId, post } from '../../services/Service';
+import { TokenState } from '../../../store/token/TokenReducer'
+import Postagem from '../../models/Postagem'
+import { buscaId, deleteId, post } from '../../services/Service'
 
 function DeletarPostagem() {
 
-  let navigate = useNavigate();
-  const { id } = useParams<{ id: string }>();
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
+  let navigate = useNavigate()
+
+  const { id } = useParams<{ id: string }>()
+
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   const [postagem, setPostagem] = useState<Postagem>();
@@ -60,7 +62,7 @@ function DeletarPostagem() {
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+                Deseja deletar a postagem?
               </Typography>
               <Typography color="textSecondary">{postagem?.titulo}</Typography>
             </Box>
@@ -73,7 +75,7 @@ function DeletarPostagem() {
                   variant="contained"
                   className="marginLeft"
                   size="large"
-                  color="primary"
+                  style={{backgroundColor: '#c21010', color: 'white'}}
                 >
                   Sim
                 </Button>
@@ -83,7 +85,7 @@ function DeletarPostagem() {
                   onClick={nao}
                   variant="contained"
                   size="large"
-                  color="secondary"
+                  style={{ backgroundColor: "#06283d", color: "white" }}
                 >
                   Não
                 </Button>

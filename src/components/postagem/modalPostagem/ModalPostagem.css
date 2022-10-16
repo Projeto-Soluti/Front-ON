@@ -1,0 +1,12 @@
+.cursor {
+    cursor: pointer;
+}
+
+.btnModal {
+    border-color: black !important;
+    background-color: none !important;
+}
+
+.radius {
+    border-radius: 10%;
+}

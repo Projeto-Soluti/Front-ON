@@ -10,8 +10,8 @@ function ListaTema() {
 
   let navigate = useNavigate();
   const [temas, setTemas] = useState<Tema[]>([]);
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   useEffect(() => {
@@ -56,10 +56,11 @@ function ListaTema() {
                     <Box mx={1}>
                       <Button
                         variant="contained"
-                        size="small"
-                        className='atualizar'
+                        size="medium"
+                        style={{ backgroundColor: '#D8D8D8', fontWeight: 'bold', color: '#000' }} 
+
                       >
-                        atualizar
+                        Atualizar
                       </Button>
                     </Box>
                   </Link>
@@ -67,10 +68,10 @@ function ListaTema() {
                     <Box mx={1}>
                       <Button
                         variant="contained"
-                        size="small"
-                        className='deletar'
+                        size="medium"
+                        style={{ backgroundColor: '#C21010', fontWeight: 'bold' }}
                       >
-                        deletar
+                        Deletar
                       </Button>
                     </Box>
                   </Link>

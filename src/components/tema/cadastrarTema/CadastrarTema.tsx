@@ -6,13 +6,15 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { TokenState } from '../../../store/token/TokenReducer';
 import Tema from '../../models/Tema';
 import { buscaId, post, put } from '../../services/Service';
+import { toast } from 'react-toastify'
+
 
 function CadastrarTema() {
 
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   const [tema, setTema] = useState<Tema>({
@@ -22,7 +24,17 @@ function CadastrarTema() {
 
    useEffect(() => {
      if(token === '') {
-       alert('Você precisa estar Logado!')
+      //  alert('Você precisa estar Logado!')
+      toast.warn('Você precisa estar logado.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
        navigate('/login')
     }
    }, [token])
@@ -54,8 +66,19 @@ function CadastrarTema() {
         await put('/temas', tema, setTema, {
           headers: {'Authorization': token}
         });
-        alert('Tema Atualizado com Sucesso')
+        // alert('Tema Atualizado com Sucesso')
+        toast.success('Tema atualizado com sucesso!', {
+          position: 'top-right', 
+          autoClose: 2000, //2 segundos
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: 0,
+          theme: "light",
+      })
         navigate('/temas')
+
       } catch (error) {
         alert('Falha ao atualizar o Tema, tente novamente!')
       }
@@ -64,7 +87,17 @@ function CadastrarTema() {
         await post('/temas', tema, setTema, {
           headers: {'Authorization': token}
         })
-        alert('Tema Cadastrado com sucesso')
+        // alert('Tema Cadastrado com sucesso')
+        toast.success('Tema cadastrado com sucesso!', {
+          position: 'top-right', 
+          autoClose: 2000, //2 segundos
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: 0,
+          theme: "light",
+      })
         navigate('/temas')
       } catch (error) {
         alert('Falha ao Criar um Tema, tente novamente!')
@@ -79,11 +112,11 @@ function CadastrarTema() {
       <Container maxWidth="sm">
         <form onSubmit={cadastrar}>
           <Typography variant="h3" component="h1">
-            Novo tema
+            Cadastrar tema
           </Typography>
 
           <TextField
-            label="Nome do tema"
+            label="Descrição"
             value={tema.descricao}
             onChange={(event: ChangeEvent<HTMLInputElement>) =>
               atualizarTema(event)
@@ -93,14 +126,15 @@ function CadastrarTema() {
             variant="outlined"
             margin="normal"
             fullWidth
+            required
           />
 
-          <Box display="flex" justifyContent="space-around">
-            <Button type="submit" variant="contained" className='cadastro'>
+          <Box display="flex" justifyContent="space-around" >
+            <Button type="submit" variant="contained" className='cadastro' style={{ backgroundColor: '#D8D8D8', fontWeight: 'bold', color: '#000' }}>
               Cadastrar
             </Button>
             <Link to="/home" className="text-decoration-none">
-              <Button variant="contained" className='cancelar'>
+              <Button variant="contained" style={{ backgroundColor: '#C21010', fontWeight: 'bold' }} >
                 Cancelar
               </Button>
             </Link>

@@ -2,9 +2,8 @@
 
 * {
     margin: 0 auto; 
-    padding: 0;   
+    padding: 0;
     box-sizing: border-box;
-    max-width: 1200px;
 }
 
 header {
@@ -21,19 +20,19 @@ header {
     margin-left: -10px;
 }
 
-li {
+.lista-menu li {
     display: inline-block;
     padding: 15px;
     font-size: 19px;
 }
 
-li a {
+.lista-menu li a {
     text-decoration: none;
     color: #022534;
     margin-right: -8px;
 }
 
-a:hover {
+.lista-menu a:hover {
     color: #5006d0;
     transition: 0.3s;
 }
@@ -44,12 +43,13 @@ a:hover {
     border-radius: 15px;
 }
 
+// n está reconhecendo a cor branca --- verificar isso
 .login:hover {
     background-color: #022534;
     color: #fff;
 }
 
-h1 {
+.title h1 {
     font-weight: 200;
 }
 
@@ -67,21 +67,21 @@ article img {
     height: 550px;
 }
 
-h2 {
+aside h2 {
     font-size: 56px;
 }
 
-h2 span {
+aside h2 span {
     color: #5006d0;
     font-weight: bold;
 }
 
-h3 {
+aside h3 {
     font-size: 45px;
     padding-bottom: 10px;
 }
 
-p {
+aside p {
     font-size: 20px;
     line-height: 20px;
     max-width: 500px;

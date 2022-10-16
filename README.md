@@ -40,7 +40,7 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
     </td>
     <td>
       <a href="https://github.com/Pddro1">
-        <img width="200" src="https://user-images.githubusercontent.com/105940878/189456626-fb659df6-3ee4-434c-987d-6ddaddabb6fd.jpg">
+        <img width="200" src="https://user-images.githubusercontent.com/104800947/196010663-ac214153-211e-4e9d-acb0-d84a165e8286.png">
       </a>
     </td>
     <td>

@@ -4,20 +4,32 @@ import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
 import { TokenState } from '../../../store/token/TokenReducer';
 import Postagem from '../../models/Postagem';
-import { busca } from '../../services/Service';
+import { busca } from '../../services/Service'
+import { toast } from 'react-toastify'
+
 
 function ListaPostagem() {
 
   let navigate = useNavigate();
   const [postagens, setPostagens] = useState<Postagem[]>([])
 
-  const token = useSelector<TokenState, TokenState['token']>(
-    (state) => state.token
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    (state) => state.tokens
   )
 
   useEffect(() => {
     if(token === '') {
-      alert('Você precisa estar Logado!')
+      // alert('Você precisa estar Logado!')
+      toast.warn('Você precisa estar logado.', {
+        position: 'top-right', 
+        autoClose: 2000, 
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
       navigate('/login')
     }
   },[token])
@@ -61,15 +73,15 @@ function ListaPostagem() {
                 <Box>
                   <Link to={`/editarPost/${postagem.id}`} className='text-decorator-none'>
                     <Box mx={1}>
-                      <Button variant='contained' size='small'>
-                        atualizar
+                      <Button variant='contained' size='medium' style={{ backgroundColor: "#06283d", color: "white" }}>
+                        Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/apagarPost/${postagem.id}`} className='text-decorator-none'>
                     <Box mx={1}>
-                      <Button variant='contained' size='small' style={{backgroundColor: 'red'}}>
-                        deletar
+                      <Button variant='contained' size='medium' style={{backgroundColor: '#c21010', color: 'white'}}>
+                        Deletar
                       </Button>
                     </Box>
                   </Link>
