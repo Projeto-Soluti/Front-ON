@@ -59,7 +59,7 @@ function ModalTema() {
             <Button
                 variant="outlined"
                 className="btnModal"
-                onClick={handleOpen}>Novo Tema</Button>
+                onClick={handleOpen}>Novo tema</Button>
             <Modal
                 open={open}
                 onClose={handleClose}

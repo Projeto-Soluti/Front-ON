@@ -1,21 +1,24 @@
-import React from "react";
-import {AppBar, Toolbar, Typography} from "@material-ui/core";
-import {Link,  useNavigate} from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux";
-import { TokenState } from "../../../store/token/TokenReducer";
-import {toast} from 'react-toastify';
-import { Box } from "@mui/material";
-import './Navbar.css';
-import { addToken } from "../../../store/token/Action";
+import React from "react"
+import {AppBar, Toolbar, Typography, Grid } from "@material-ui/core"
+import { Link,  useNavigate} from 'react-router-dom'
+import { useDispatch, useSelector } from "react-redux"
+import { TokenState } from "../../../store/token/TokenReducer"
+import { Box } from "@mui/material"
+import './Navbar.css'
+import { addToken } from "../../../store/token/Action"
+import { toast } from 'react-toastify'
+
 
 function Navbar() {
 
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    );
+    )
     
-    let navigate = useNavigate();
-    const dispatch = useDispatch();
+    let navigate = useNavigate()
+
+    const dispatch = useDispatch()
+
 
     function goLogout() {
         dispatch(addToken(''));
@@ -28,26 +31,31 @@ function Navbar() {
             draggable: false,
             theme: "colored",
             progress: undefined,
-        });
+        })
         
         navigate('/login')
     }
 
-    var navBarComponent;
+    var navBarComponent
 
 
     if(token !== "") {
-        navBarComponent = <AppBar position="static">
-        <Toolbar className='toolbar'>
+        navBarComponent = 
+        <AppBar position="static" style={{ backgroundColor: "#212121", color: "white" }}>
+        <Toolbar >
             <Box className='blogPessoal'>
                 <Box className='cursor'>
-                    <Typography variant="h5" color="inherit">
-                        Blog Pessoal
+                    <Typography variant="h5" >
+                        SolutiON
                     </Typography>
+
+                    
                 </Box>
             </Box>
 
-            <Box className='menu'>
+            
+            <Grid container justifyContent="flex-end" style={{ marginRight: '70px' }}>
+            <Box className='menu' > 
                 <Link to='/home' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
@@ -77,13 +85,24 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                    <Box mx={1} className='cursor' onClick={goLogout}>
+
+
+                    {/* <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             Logout
                         </Typography>
+                    </Box> */}
+
+                    <Box mx={1} className="logout" onClick={goLogout}> 
+                        <Typography style={{ paddingLeft: '12px', fontWeight: 'bold' }} variant="h6" color="inherit">
+                            LOGOUT
+                        </Typography>
+
                     </Box>
 
-            </Box>
+                </Box>
+            </Grid>
+            
         </Toolbar>
     </AppBar>
         
@@ -91,9 +110,9 @@ function Navbar() {
 
     return(
         <>
-          {navBarComponent}  
+            {navBarComponent}  
         </>
     )
 }
 
-export default Navbar;
+export default Navbar

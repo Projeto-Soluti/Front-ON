@@ -1,11 +1,14 @@
 import { Button, Container, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import Postagem from '../../models/Postagem'
-import Tema from '../../models/Tema';
+import Tema from '../../models/Tema'
 import { TokenState } from '../../../store/token/TokenReducer';
-import { busca, buscaId, post, put } from '../../services/Service';
+import { busca, buscaId, post, put } from '../../services/Service'
+import { toast } from 'react-toastify'
+
+
 
 function CadastroPostagem() {
 
@@ -32,10 +35,21 @@ function CadastroPostagem() {
 
   useEffect(() => {
     if(token === '') {
-      alert('Você precisa estar Logado!')
+      // alert('Você precisa estar logado!')
+      toast.warn('Você precisa estar logado.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
       navigate("/login")
     }
   }, [token])
+
 
   useEffect(() => {
     setPostagem({
@@ -43,6 +57,7 @@ function CadastroPostagem() {
       tema: tema,
     })
   }, [tema])
+
 
   async function findByIdPostagem(id: string) {
     await buscaId(`/postagens/${id}`, setPostagem, {
@@ -80,8 +95,17 @@ function CadastroPostagem() {
                 Authorization: token 
             },
         })
-        alert('Atualizado')
-       
+        toast.success('Postagem atualizada com sucesso!', {
+          position: 'top-right', 
+          autoClose: 2000, //2 segundos
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: 0,
+          theme: "light",
+      })
+
 
     } else {
         post(`/postagens`, postagem, setPostagem, {
@@ -89,7 +113,16 @@ function CadastroPostagem() {
                 Authorization: token 
             },
           })
-          alert("Postado")
+          toast.success('Postagem cadastrada com sucesso!', {
+            position: 'top-right', 
+            autoClose: 2000, //2 segundos
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: 0,
+            theme: "light",
+        })
           
     }
     back()
@@ -110,7 +143,7 @@ function back() {
             component='h1'
             align='center'
             >
-            Fazer um novo Post
+              Postagens
           </Typography>
 
           <TextField 
@@ -122,6 +155,7 @@ function back() {
             label='Titulo'
             fullWidth
             margin='normal'
+            required
           />
 
           <TextField 
@@ -133,6 +167,7 @@ function back() {
             label='Texto'
             fullWidth
             margin='normal'
+            required
           />
 
           <FormControl fullWidth variant='filled'>
@@ -152,12 +187,13 @@ function back() {
                 </MenuItem>
               ))}
             </Select>
-            <FormHelperText>Escolha um Tema para a Postagem</FormHelperText>
+            <FormHelperText>Escolha um tema para a postagem</FormHelperText>
             <Button
               type='submit'
               variant='contained'
+              style={{ backgroundColor: "#06283d", color: "white" }}
               >
-              Postar
+                Postar
             </Button>
           </FormControl>
             

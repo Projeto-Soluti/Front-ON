@@ -1,6 +1,6 @@
-.toolbar {
+/* .toolbar {
     background-color:#3F51B5;
-}
+} */
 
 .cursor {
     cursor: pointer;
@@ -17,7 +17,14 @@
 }
 
 .menu {
-    display: flex;
+    display: flex !important;
+    justify-content: center !important;
     right: 1vh;
     gap:.0rem;
+}
+
+.logout {
+    text-decoration: none;
+    color: #C21010;
+    cursor: pointer;
 }
