@@ -11,8 +11,8 @@ import { toast } from 'react-toastify'
 
 function Navbar() {
 
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
+    const token = useSelector<TokenState, TokenState["token"]>(
+        (state) => state.token
     )
     
     let navigate = useNavigate()
@@ -44,12 +44,10 @@ function Navbar() {
         <AppBar position="static" style={{ backgroundColor: "#212121", color: "white" }}>
         <Toolbar >
             <Box className='blogPessoal'>
-                <Box className='cursor'>
+                <Box>
                     <Typography variant="h5" >
                         SolutiON
                     </Typography>
-
-                    
                 </Box>
             </Box>
 

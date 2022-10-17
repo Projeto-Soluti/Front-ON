@@ -5,6 +5,15 @@
 .cursor {
     cursor: pointer;
     color: white;
+    transition: transform 1s;
+}
+
+.cursor:hover{
+    transform: scale(1.2);
+}
+
+.cursor:active {
+    color: #eceaea;
 }
 
 .text-decorator-none {
@@ -27,4 +36,10 @@
     text-decoration: none;
     color: #C21010;
     cursor: pointer;
+    transition: transform 1s;
+}
+
+.logout:hover {
+    transform: scale(1.2);
+    color: #C21010;
 }

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom"
 import './Login.css'
 import UserLogin from '../../models/UserLogin'
 import { login } from '../../services/Service'
-import { addToken } from '../../../store/token/Action'
+import { addId, addToken } from '../../../store/token/Action'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 
@@ -14,11 +14,8 @@ import { toast } from 'react-toastify'
 function Login() {
 
   let navigate = useNavigate()
-
-  const dispatch = useDispatch()
-
+  const dispatch = useDispatch();
   const [token, setToken] = useState('')
-
   const [userLogin, setUserLogin] = useState<UserLogin>({
     id: 0,
     nome: '',
@@ -26,8 +23,18 @@ function Login() {
     cnpj: '',
     senha: '',
     foto: '',
+    token: ''
+  });
+
+  const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+    id: 0,
+    nome: '',
+    usuario: '',
+    cnpj: '',
+    senha: '',
+    foto: '',
     token: '',
-  })
+  });
 
   function updatedModel(e: ChangeEvent<HTMLInputElement>){
     setUserLogin({
@@ -39,29 +46,30 @@ function Login() {
   async function onSubmit(event: ChangeEvent<HTMLFormElement>){
     event.preventDefault();
     try{
-      await login('usuarios/logar', userLogin, setToken)
-      toast.success('Usuário logado com sucesso!', {
-        position: 'top-right', 
-        autoClose: 2000, 
+      await login('usuarios/logar', userLogin, setRespUserLogin)
+      toast.success('Logado com Sucesso!', {
+        position: "top-center",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
-        progress: 0,
-        theme: "light",
-    })
-
+        progress: undefined,
+        theme: "colored",
+        });
+      
+      
     }catch(error){
-      toast.error('Dados inconsistentes. Erro ao logar.', {
-        position: 'top-right', 
-        autoClose: 2000, //2 segundos
+      toast.error('Dados do usuário inconsistentes. Erro ao Logar!', {
+        position: "top-center",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
-        progress: 0,
-        theme: "light",
-    })
+        progress: undefined,
+        theme: "colored",
+        });
     }
   }
 
@@ -71,6 +79,29 @@ function Login() {
       navigate('/home')
     }
   }, [token])
+
+  useEffect(() => {
+    if(respUserLogin.token !== ''){
+      dispatch(addToken(respUserLogin.token))
+      dispatch(addId(respUserLogin.id.toString()))
+      navigate('/home')
+    }
+  },[respUserLogin.token])
+
+  useEffect(() => {
+    if(token !== ''){
+      dispatch(addToken(token))
+      navigate('/home')
+    }
+  }, [token])
+
+  useEffect(() => {
+    if(respUserLogin.token !== ''){
+      dispatch(addToken(respUserLogin.token));
+      dispatch(addId(respUserLogin.id.toString()))
+      navigate('/home')
+    }
+  }, [respUserLogin.token])
 
 
 

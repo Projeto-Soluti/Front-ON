@@ -10,8 +10,8 @@ function DeletarTema() {
 
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const token = useSelector<TokenState, TokenState['tokens']>(
-    (state) => state.tokens
+  const token = useSelector<TokenState, TokenState['token']>(
+    (state) => state.token
   )
 
   useEffect(() => {
