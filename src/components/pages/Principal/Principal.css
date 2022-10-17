@@ -4,7 +4,6 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-
 }
 
 header {
@@ -84,7 +83,7 @@ header ul li a:hover::before {
     font-weight: bold;
 }
 
-// n está reconhecendo a cor branca --- verificar isso
+/* // n está reconhecendo a cor branca --- verificar isso */
 .login:hover li a {
     background-color: #022534;
     color: #fff;

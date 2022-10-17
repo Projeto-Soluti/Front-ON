@@ -44,12 +44,10 @@ function Navbar() {
         <AppBar position="static" style={{ backgroundColor: "#212121", color: "white" }}>
         <Toolbar >
             <Box className='blogPessoal'>
-                <Box className='cursor'>
+                <Box>
                     <Typography variant="h5" >
                         SolutiON
                     </Typography>
-
-                    
                 </Box>
             </Box>
 

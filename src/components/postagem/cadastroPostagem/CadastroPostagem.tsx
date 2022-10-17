@@ -7,6 +7,7 @@ import Tema from '../../models/Tema'
 import { TokenState } from '../../../store/token/TokenReducer';
 import { busca, buscaId, post, put } from '../../services/Service'
 import { toast } from 'react-toastify'
+import './CadastroPostagem.css'
 
 
 
@@ -90,7 +91,7 @@ function CadastroPostagem() {
     event.preventDefault();
 
     if (id !== undefined) {
-        put(`/postagens`, postagem, setPostagem, {
+        put('/postagens', postagem, setPostagem, {
             headers: { 
                 Authorization: token 
             },
@@ -162,7 +163,7 @@ function back() {
             value={postagem.texto}
             onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarPostagem(event)}
             variant='filled'
-            id='texto'
+            id='textoPostagem'
             name='texto'
             label='Texto'
             fullWidth
