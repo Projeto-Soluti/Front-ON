@@ -19,9 +19,13 @@ function ListaPostagem() {
   let navigate = useNavigate();
   const [postagens, setPostagens] = useState<Postagem[]>([]);
 
-  const token = useSelector<TokenState, TokenState["tokens"]>(
-    (state) => state.tokens
+  const token = useSelector<TokenState, TokenState["token"]>(
+    (state) => state.token
   );
+
+  const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
+  )
 
   useEffect(() => {
     if (token === "") {
