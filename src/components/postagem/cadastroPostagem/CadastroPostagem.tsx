@@ -7,6 +7,8 @@ import Tema from '../../models/Tema'
 import { TokenState } from '../../../store/token/TokenReducer';
 import { busca, buscaId, post, put } from '../../services/Service'
 import { toast } from 'react-toastify'
+import './CadastroPostagem.css'
+import User from '../../models/User';
 
 
 
@@ -15,8 +17,12 @@ function CadastroPostagem() {
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>()
   const [temas, setTemas] = useState<Tema[]>([]);
-  const token = useSelector<TokenState, TokenState['tokens']>(
-    (state) => state.tokens
+  const token = useSelector<TokenState, TokenState['token']>(
+    (state) => state.token
+  )
+
+  const userId = useSelector<TokenState, TokenState['id']>(
+    (state) => state.id
   )
 
   const [tema, setTema] = useState<Tema>({
@@ -30,6 +36,15 @@ function CadastroPostagem() {
     texto: '',
     data: '',
     tema: null,
+  })
+
+  const [usuario, setUsuario] = useState<User>({
+    id: +userId,
+    nome: '', 
+    usuario: '',
+    cnpj: '',
+    senha: '',
+    foto: '',
   })
 
 
@@ -55,8 +70,9 @@ function CadastroPostagem() {
     setPostagem({
       ...postagem,
       tema: tema,
-    })
-  }, [tema])
+      usuario: usuario
+    });
+  }, [tema]);
 
 
   async function findByIdPostagem(id: string) {
@@ -125,12 +141,9 @@ function CadastroPostagem() {
         })
           
     }
-    back()
-}
-
-function back() {
     navigate('/postagens')
 }
+
 
 
   return (
@@ -162,7 +175,7 @@ function back() {
             value={postagem.texto}
             onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarPostagem(event)}
             variant='filled'
-            id='texto'
+            id='textoPostagem'
             name='texto'
             label='Texto'
             fullWidth
