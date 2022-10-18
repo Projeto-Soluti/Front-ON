@@ -40,10 +40,6 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
-
-                        <li>
-                            <a href="#Solutioners">Solutioners</a>
-                        </li>
                        
                         <Link to='/login'>
 
@@ -179,13 +175,6 @@ function Principal() {
                         </div>
                     </article>
                 </section>
-
-
-                    <section>
-                        <article id="Solutioners"> 
-                        <Solutioners />    
-                </article>
-                         </section>
 
                 <section>
                     <article id="faq">
