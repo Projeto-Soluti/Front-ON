@@ -20,6 +20,7 @@ import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostag
 
 
 
+
 function App() {
   return (
     <Provider store={store} > 
@@ -28,6 +29,7 @@ function App() {
           <Navbar />
             <div style={{ minHeight: '80vh'}}>
               <Routes>
+
                 <Route path='/' element={ <Principal /> } />
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/cadastrousuario' element={ <CadastroUsuario /> } />
