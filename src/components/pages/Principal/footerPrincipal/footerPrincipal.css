@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.on {
-    color: #5006d0;
-}
-
 
 .footer {
     display: flex;
@@ -14,8 +10,9 @@
     text-align: left;
     margin-top: 80px;
     font-family: 'Montserrat', sans-serif, bold;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     justify-content: center;
+    align-items: center !important;
 }
 
 .itensFooter{
@@ -28,6 +25,8 @@
     vertical-align: top;
     padding-top: 40px
 }
+
+
 
 /* footer-esquerda */
 
@@ -63,6 +62,7 @@
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    padding-top: 10px;
 }
 
 /*footer - centro*/
@@ -93,24 +93,42 @@
     
 }
 
- .footerCenter, p {
+i.email,i.telefone, i.local{
+   padding-bottom: 0px;
+}
+
+
+ .footerCenter p {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
     margin: 0;
 }
 
- .footerCenter, p  {
+ .footerCenter   {
     display: block;
     font-weight: normal;
     font-size: 14px;
     line-height: 2;
+    align-items: center !important;
+    justify-content: center;
+    margin-top:42px;
+    padding: 2px
 }
 
-.footerCenter, p a {
-    color: #5006d0;
+.footerCenter p a {
+    color: #3F71EA;
     text-decoration: none;
     
+}
+
+.sobrenos{
+     color: #18d9eb !important;
+}
+
+.footerLinks li a{
+    padding-right: 25px;
+    list-style: none !important;
 }
 
 
@@ -152,7 +170,7 @@
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-    margin-right: 3px;
+    margin-right: 20px;
     margin-bottom: 5px;
 }
 
@@ -162,8 +180,9 @@
 
 .footerLinks, a:hover {
     color: #3F71EA;
+    display: inline-flex;
+    
 }
-
 
 @media (max-width: 880px) {
      .footerLeft, .footer .footerCenter, .footerRight {
@@ -172,8 +191,9 @@
         margin-bottom: 40px;
         text-align: center;
     }
-     .footerCenter, i {
+     .footerCenter i {
         margin-left: 0;
+        
     }
 }       
 
