@@ -11,7 +11,6 @@
     background-position: center;
 }
 
-
 .text-decorator-none{
     text-decoration: none !important;
 }
@@ -29,6 +28,25 @@
 
 .orientacoes {
     display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+flex-direction: column;
+align-items: center;
+justify-content: center;  
+}
+
+.vrido{
+    background: rgba(255,255,255,0.6);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,255,255,0.3);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;    
+border-radius: 8px;
+    width: 80%;
+    height: 650px;
+}
+.fundo input:focus{
+    color:#2a3eb1;
+    border-radius: 8px;
 }

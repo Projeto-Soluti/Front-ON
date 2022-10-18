@@ -8,6 +8,8 @@ import { Box } from '@mui/material'
 import 'react-alice-carousel/lib/alice-carousel.css';
 import AliceCarousel from "react-alice-carousel";
 import Solutioners from './Solutioners/Solutioners'
+import { Link } from 'react-router-dom'
+
 
 
 function Principal() {
@@ -17,10 +19,10 @@ function Principal() {
 
             <header className="header-menu">
                 <div className='title'>
-                    <h1>Soluti<span>ON</span></h1>
+                    <h1>Soluti<span className='title2'>ON</span></h1>
                 </div>
 
-                <nav>
+                <Grid xs={12} className="nav">
                     <ul className="lista-menu">
                         <li>
                             <a href="#sobre">Sobre</a>
@@ -38,22 +40,24 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
+
                         <li>
                             <a href="#Solutioners">Solutioners</a>
                         </li>
-                        <li>
-                            <a href="#faq">FAQ</a>
-                        </li>
+                       
+                        <Link to='/login'>
+
                         <li>
                             <a href="#login" className='login'>Login</a>
                         </li>
+                        </Link>
 
                     </ul>
-                </nav>
+                </Grid>
             </header>
 
             {/* página principal  */}
-            <main>
+            <Grid xs= {12} className="main" >
 
                 {/* metade da tela p/ o texto */}
                 <aside>
@@ -64,14 +68,16 @@ function Principal() {
                     <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 
 
-                    <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    <Link to='/cadastrousuario'>
+                        <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    </Link>
                 </aside>
 
                 <article>
                     <img src={img2} alt="COLOCAR ALGUMA DESCRIÇÃO MINIMAMENTE COERENTE" />
                 </article>
             {/* RETIRAR ESSE MAIN ASSIM QUE POSSÍVEL */}
-            </main>        
+            </Grid>        
 
                 <section className='sobre'>
                     <article id="sobre" >
@@ -138,7 +144,9 @@ function Principal() {
                             </div>
 
                         </div>
-
+                <Link to='/cadastrousuario'>
+                    <input type="submit" value="Faça parte!" className="enviar2" />
+                </Link>
                     </article>
                 </section>
 
@@ -161,7 +169,14 @@ function Principal() {
 
                 <section>
                     <article id="alcance">
+                        <div className='datah'>
+                            <ul>
+                                <li><div className='count'>5000+</div><span>Empresas</span></li>
+                                <li><div className='count'>4000+</div><span>Conexões</span></li>
+                                <li><div className='count'>3000+</div><span>Cooperativas</span></li>
 
+                            </ul>
+                        </div>
                     </article>
                 </section>
 
