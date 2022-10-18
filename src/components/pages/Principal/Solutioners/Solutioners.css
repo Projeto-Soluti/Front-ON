@@ -1,0 +1,51 @@
+.App{
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 20px 0 15px 0;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #141b4e;
+}
+
+.item{
+    /*background: rgb(153, 131, 131); */
+    height: 150px;
+    width: 150px;
+    text-align:center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.item:hover img{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
+    background-color: rgb(153, 131, 131) !important;
+}
+

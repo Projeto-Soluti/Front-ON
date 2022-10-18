@@ -5,7 +5,11 @@ import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser cham
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
+import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from "react-alice-carousel";
+import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
+
 
 
 function Principal() {
@@ -36,9 +40,13 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
-                       
 
+                        <li>
+                            <a href="#Solutioners">Solutioners</a>
+                        </li>
+                       
                         <Link to='/login'>
+
                         <li>
                             <a href="#login" className='login'>Login</a>
                         </li>
@@ -173,11 +181,11 @@ function Principal() {
                 </section>
 
 
-                <section>
-                    <article id="solutioners">
-
-                    </article>
-                </section>
+                    <section>
+                        <article id="Solutioners"> 
+                        <Solutioners />    
+                </article>
+                         </section>
 
                 <section>
                     <article id="faq">
@@ -191,6 +199,7 @@ function Principal() {
 
                     </article>
                 </section>
+
 
             <div>
                 <Footer />
