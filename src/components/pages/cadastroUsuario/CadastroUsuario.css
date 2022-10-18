@@ -1,5 +1,5 @@
 .imagem2 {
-    background-image: url(https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=649&q=80);
+    background-image: url(https://i.imgur.com/VOWKkSF.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -31,4 +31,32 @@
     align-items: center;
     direction: row;
     justify-content: center;
+}
+
+.body {
+	background: linear-gradient(-45deg,#15417b, #1197a3,#15417b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.vrido{
+    background: rgba(255,255,255,0.1);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 3%;
+    padding: 5%;
 }

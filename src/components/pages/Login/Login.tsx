@@ -108,10 +108,11 @@ function Login() {
 
 
     return (
-        <Grid container className="container" >
+        
+        <Grid container className="container body" >
             <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
                 <Box paddingX={20} alignItems="center" >
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={onSubmit} className="vrido">
                         <Typography 
                             variant="h3" 
                             gutterBottom 
@@ -124,6 +125,7 @@ function Login() {
                         </Typography>
 
                         <TextField
+
                             value={userLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id="usuario"
@@ -131,7 +133,10 @@ function Login() {
                             variant="outlined"
                             name="usuario"
                             margin="normal"
-                            fullWidth />
+                            fullWidth
+                            className="fundo"
+                            
+                             />
 
                         <TextField
                             value={userLogin.senha}
@@ -142,27 +147,32 @@ function Login() {
                             name="senha"
                             margin="normal"
                             type="password"
-                            fullWidth />
+                            fullWidth 
+                            className="fundo"/>
 
                         <Box className="logar">
-                            <Button type="submit" variant="contained" style= {{ backgroundColor: "#06283D", color: "#fff" }}>
+                            <Button type="submit" variant="contained" size='large' style= {{ backgroundColor: "#06283D", color: "white" }}>
                                 Logar
                             </Button>
                         </Box>
-
                     </form>
+
                 </Box>
                 <Box className="orientacoes">
                     <Box marginRight={1}>
                         <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta?</Typography>
                     </Box>
+                    <Box>
                     <Link to='/cadastrousuario'>
                         <Typography variant="subtitle1" gutterBottom align="center" className='bold'>Cadastre-se</Typography>
                     </Link>
-
+                    </Box>
                 </Box>
             </Grid>
-                <Grid xs={12} md={6} className="imagem"></Grid>
+                <Grid xs={12} md={6} className="imagem">
+               
+                </Grid>
+                
         </Grid>
     )
 }

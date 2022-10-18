@@ -15,7 +15,7 @@ function Principal() {
 
             <header className="header-menu">
                 <div className='title'>
-                    <h1>Soluti<span>ON</span></h1>
+                    <h1>Soluti<span className='title2'>ON</span></h1>
                 </div>
 
                 <Grid xs={12} className="nav">
@@ -36,9 +36,7 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
-                        <li>
-                            <a href="#solutoners">Solutioners</a>
-                        </li>
+                       
 
                         <Link to='/login'>
                         <li>
@@ -51,7 +49,7 @@ function Principal() {
             </header>
 
             {/* página principal  */}
-            <Grid xs= {12} className="main">
+            <Grid xs= {12} className="main" >
 
                 {/* metade da tela p/ o texto */}
                 <aside>
