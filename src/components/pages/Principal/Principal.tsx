@@ -6,6 +6,7 @@ import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
 
+
 function Principal() {
     return (
         <>
@@ -16,7 +17,7 @@ function Principal() {
                     <h1>Soluti<span>ON</span></h1>
                 </div>
 
-                <nav>
+                <Grid xs={12} className="nav">
                     <ul className="lista-menu">
                         <li>
                             <a href="#sobre">Sobre</a>
@@ -38,18 +39,15 @@ function Principal() {
                             <a href="#solutoners">Solutioners</a>
                         </li>
                         <li>
-                            <a href="#faq">FAQ</a>
-                        </li>
-                        <li>
                             <a href="#login" className='login'>Login</a>
                         </li>
 
                     </ul>
-                </nav>
+                </Grid>
             </header>
 
             {/* página principal  */}
-            <main>
+            <Grid xs= {12} className="main">
 
                 {/* metade da tela p/ o texto */}
                 <aside>
@@ -67,7 +65,7 @@ function Principal() {
                     <img src={img2} alt="COLOCAR ALGUMA DESCRIÇÃO MINIMAMENTE COERENTE" />
                 </article>
             {/* RETIRAR ESSE MAIN ASSIM QUE POSSÍVEL */}
-            </main>        
+            </Grid>        
 
                 <section className='sobre'>
                     <article id="sobre" >
