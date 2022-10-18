@@ -5,6 +5,7 @@ import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser cham
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 
 function Principal() {
@@ -38,9 +39,12 @@ function Principal() {
                         <li>
                             <a href="#solutoners">Solutioners</a>
                         </li>
+
+                        <Link to='/login'>
                         <li>
                             <a href="#login" className='login'>Login</a>
                         </li>
+                        </Link>
 
                     </ul>
                 </Grid>
@@ -58,7 +62,9 @@ function Principal() {
                     <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 
 
-                    <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    <Link to='/cadastrousuario'>
+                        <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    </Link>
                 </aside>
 
                 <article>
@@ -132,7 +138,9 @@ function Principal() {
                             </div>
 
                         </div>
-
+                <Link to='/cadastrousuario'>
+                    <input type="submit" value="Faça parte!" className="enviar2" />
+                </Link>
                     </article>
                 </section>
 
@@ -155,7 +163,14 @@ function Principal() {
 
                 <section>
                     <article id="alcance">
+                        <div className='datah'>
+                            <ul>
+                                <li><div className='count'>5000+</div><span>Empresas</span></li>
+                                <li><div className='count'>4000+</div><span>Conexões</span></li>
+                                <li><div className='count'>3000+</div><span>Cooperativas</span></li>
 
+                            </ul>
+                        </div>
                     </article>
                 </section>
 
