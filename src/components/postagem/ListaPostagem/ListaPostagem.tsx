@@ -69,7 +69,7 @@ function ListaPostagem() {
                 component="p"
                 className="textoPostagem"
               >
-                Postado por:
+                Postado por: {postagem.usuario?.nome}
               </Typography>
               <Typography variant="h5" component="h2" className="textoPostagem">
                 {postagem.titulo}
