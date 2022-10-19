@@ -189,6 +189,12 @@ function Principal() {
                     </article>
                 </section>
 
+                <section>
+                    <article id="solutioners">
+                        <Solutioners/>
+                    </article>
+                </section>
+
 
             <div>
                 <Footer />
