@@ -1,86 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Neucha&family=Spectral:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Neucha&family=Spectral:wght@300&display=swap'); */
 
-*{
+* {
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
+
 .header-menu{
-display: flex;
-justify-content: space-between;
-/* margin: 0 80px 0 80px ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 15px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px ); 
 }
-header {
+
+.header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: 0;
     width: 100%;
-    
+    height: 10vh;
 }
 
 .nav {
     width: 100%;
     display: flex;
-    align-items: flex-end !important;
-    justify-content: end;
+    align-itens: center;
+    justify-content: center;
     position: absolute;
+    left: 28%;
 }
 
-header ul li a {
+/* o b.o da cor do botão está aqui */
+.header-menu ul li a {
     position: relative;
     text-decoration: none;
     color: #333;
+    margin-right: -8px;
     display: inline-block;
     transition: all ease-in-out .5s;
 }
 
-header ul li a::before {
+.header-menu ul li a::before {
     content: '';
     position: absolute;
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background: #333;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
 }
 
-header ul li a:hover::before {
+.header-menu ul li a:hover::before {
     transform: scaleX(1);
     transform-origin: left;
 }
 
 .text-gradient {
     background-image: linear-gradient(45deg, #15417b, #1197a3);
-    /* background-image: linear-gradient(45deg, #137db7, #18d9eb); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 .title {
     flex-direction: column;
-    padding: 15px;
-    font-size: 1.5rem;
+    padding: 15px 0 15px 60px;
     margin-left: 40px;
-    
+    /* color: #333; */
 }
+
+.title h1 {
+    font-size: 2.7rem;
+}
+
 .title2{
     background-image: linear-gradient(45deg, #15417b, #18d9eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-   
-
 }
+
 .lista-menu li {
     display: inline-block;
     font-size: 1.3em;
     padding-right: 50px;
-    
 }
 
 .login {
@@ -89,9 +103,12 @@ header ul li a:hover::before {
     color: #fff;
     padding: 10px 30px 10px 30px;
     border-radius: 15px;
-    
     font-weight: bold;
-    text-decoration: none;
+}
+
+
+.title h1 {
+    font-weight: bold;
 }
 
 .title h1 {
@@ -100,23 +117,23 @@ header ul li a:hover::before {
 
 .main {
     display: flex;
-    
+    flex-direction: row;
     background-color: #EEF1FF;
-    min-height: 90vh;
+    min-height: 100vh;
     align-items: center;
+    padding-left: 100px;
     justify-content: space-evenly;
-    margin-left: 10px;
-    
 }
 
 aside {
-    margin: 60px 30px 0 10px;
+    margin: 60px 30px 0 0;
     align-items: center !important;
 }
 
-article img {
-    width: 600px;
-    height: 500px;
+.main img {
+    margin-top: 2.7rem;;
+    width: 800px;
+    height: 650px;
     justify-content: center;
     align-items: center;
 }
@@ -148,6 +165,7 @@ aside p {
     line-height: 20px;
     max-width: 500px;
     color: #000;
+    margin: 10px 0 15px 0;
 }
 
 .enviar {
@@ -161,7 +179,6 @@ aside p {
     cursor: pointer;
     font-weight: bold;
 }
-
 
 .enviar2 {
     margin: 20px 0 25px 540px;
@@ -181,7 +198,6 @@ input [type="submit"] {
 }
 
 .sobre {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,6 +206,7 @@ input [type="submit"] {
     padding: 2rem;
     margin: 30px 80px 30px 70px;
     text-align: justify;
+    margin-top: 4rem;
 }
 
 .sobre h3 {
@@ -201,7 +218,7 @@ input [type="submit"] {
 
 .sectionSobre p {
     line-height: 150%;
-    color: black;
+    letter-spacing: 1px;
     padding-left: 8vmin;
     border-left: 5px solid navy;
     margin: 6vmin 0;
@@ -211,12 +228,10 @@ input [type="submit"] {
     font-size: 1.4rem;
 }
 
-.sectionSobre h3 span {
-    list-style: none;
-    position: relative;
-    top: 0;
-    animation: slide 5s steps(2) infinite;
-    line-height: 90px;
+.sectionSobre p span {
+    color: #145786;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 @keyframes slide {
@@ -227,7 +242,7 @@ input [type="submit"] {
 
 .valores {
     width: 1300px;
-    padding-right: 60px ;
+    padding-right: 60px;
     margin: auto;
     margin-bottom: 60px;
 }
@@ -250,7 +265,7 @@ input [type="submit"] {
     transform: translateX(-50%);
     width: 150px;
     height: 3px;
-    background-color: #141b4e;
+    background-color: #145786;
 }
 
 .cards {
@@ -260,6 +275,7 @@ input [type="submit"] {
     margin-bottom: 2rem;
 }
 
+/* a partir daqui já quebra o blur */
 .card {
     width: calc(34% - 22px);
     background: #eef1ff;
@@ -289,13 +305,16 @@ input [type="submit"] {
     margin: 1.1rem 0;
     font-size: 1.2rem;
     color: black;
+    line-height: 1.8rem;
+    text-align: justify;
+    padding: 20px;
 }
 
 .card:after {
     content: '';
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(20,87,134);
     position: absolute;
     top: 0;
     left: 0;
@@ -305,7 +324,7 @@ input [type="submit"] {
 
 .card:hover:after {
     transform: rotate(13deg);
-    background-color: rgb(	22, 33, 62);
+    background-color: rgb(2,37,52);
 }
 
 .datah {
