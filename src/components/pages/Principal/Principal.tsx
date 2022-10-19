@@ -144,7 +144,11 @@ function Principal() {
                     </article>
                 </section>
 
-                    
+                    <section>
+                        <article>
+                            <FAQ />
+                        </article>
+                    </section>
 
                 <section>
                     <article id='solutioners'>
