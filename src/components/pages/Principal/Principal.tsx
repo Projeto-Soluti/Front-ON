@@ -144,10 +144,8 @@ function Principal() {
                     </article>
                 </section>
 
-                    <article>
-                </section>
+                    
 
-<<<<<<< HEAD
                 <section>
                     <article id='solutioners'>
                         <Solutioners />
@@ -158,11 +156,7 @@ function Principal() {
             <div>
                 <Footer />
             </div>
-=======
-                <div>
-                    <Footer />
-                </div>
->>>>>>> 94824c023a5ba254b1ac1437a3d1e888ea83161d
+                
 
 
 
