@@ -20,6 +20,7 @@ import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostag
 
 
 
+
 function App() {
   return (
     <Provider store={store} > 
@@ -27,7 +28,9 @@ function App() {
         <BrowserRouter>
           <Navbar />
             <div style={{ minHeight: '80vh'}}>
+              
               <Routes>
+                
                 <Route path='/' element={ <Principal /> } />
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/cadastrousuario' element={ <CadastroUsuario /> } />
@@ -41,9 +44,7 @@ function App() {
                 <Route path='/editarPost' element={ <CadastroPostagem /> } />
                 <Route path='/editarPost/:id' element={ <CadastroPostagem /> } />
                 <Route path='/apagarPost/:id' element={ <DeletarPostagem /> } />
-
-              
-
+          
               </Routes>
             </div>
           <Footer />

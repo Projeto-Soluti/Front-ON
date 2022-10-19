@@ -5,6 +5,11 @@ import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser cham
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
+import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from "react-alice-carousel";
+import Solutioners from './Solutioners/Solutioners'
+import { Link } from 'react-router-dom'
+
 
 
 function Principal() {
@@ -14,7 +19,7 @@ function Principal() {
 
             <header className="header-menu">
                 <div className='title'>
-                    <h1>Soluti<span>ON</span></h1>
+                    <h1>Soluti<span className='title2'>ON</span></h1>
                 </div>
 
                 <Grid xs={12} className="nav">
@@ -35,19 +40,20 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
-                        <li>
-                            <a href="#solutoners">Solutioners</a>
-                        </li>
+                       
+                        <Link to='/login'>
+
                         <li>
                             <a href="#login" className='login'>Login</a>
                         </li>
+                        </Link>
 
                     </ul>
                 </Grid>
             </header>
 
             {/* página principal  */}
-            <Grid xs= {12} className="main">
+            <Grid xs= {12} className="main" >
 
                 {/* metade da tela p/ o texto */}
                 <aside>
@@ -58,7 +64,9 @@ function Principal() {
                     <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 
 
-                    <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    <Link to='/cadastrousuario'>
+                        <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                    </Link>
                 </aside>
 
                 <article>
@@ -132,7 +140,9 @@ function Principal() {
                             </div>
 
                         </div>
-
+                <Link to='/cadastrousuario'>
+                    <input type="submit" value="Faça parte!" className="enviar2" />
+                </Link>
                     </article>
                 </section>
 
@@ -155,14 +165,14 @@ function Principal() {
 
                 <section>
                     <article id="alcance">
+                        <div className='datah'>
+                            <ul>
+                                <li><div className='count'>5000+</div><span>Empresas</span></li>
+                                <li><div className='count'>4000+</div><span>Conexões</span></li>
+                                <li><div className='count'>3000+</div><span>Cooperativas</span></li>
 
-                    </article>
-                </section>
-
-
-                <section>
-                    <article id="solutioners">
-
+                            </ul>
+                        </div>
                     </article>
                 </section>
 
@@ -178,6 +188,7 @@ function Principal() {
 
                     </article>
                 </section>
+
 
             <div>
                 <Footer />

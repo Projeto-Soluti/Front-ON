@@ -4,9 +4,12 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    
 }
-
+.header-menu{
+display: flex;
+justify-content: space-between;
+/* margin: 0 80px 0 80px ; */
+}
 header {
     display: flex;
     flex-direction: row;
@@ -23,18 +26,14 @@ header {
     align-items: flex-end !important;
     justify-content: end;
     position: absolute;
-    
-    
 }
 
 header ul li a {
     position: relative;
     text-decoration: none;
     color: #333;
-    /*margin-right: -8px;*/
     display: inline-block;
     transition: all ease-in-out .5s;
-    
 }
 
 header ul li a::before {
@@ -43,7 +42,7 @@ header ul li a::before {
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background: #333;
+    background-color: #333;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
@@ -55,20 +54,28 @@ header ul li a:hover::before {
 }
 
 .text-gradient {
-    background-image: linear-gradient(45deg, #137db7, #4A00E0);
+    background-image: linear-gradient(45deg, #15417b, #1197a3);
     /* background-image: linear-gradient(45deg, #137db7, #18d9eb); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .title {
     flex-direction: column;
-    padding: 15px 0 15px 70px;
+    padding: 15px;
     font-size: 1.5rem;
-    color: #333;
-    margin-right: 180px;
+    margin-left: 40px;
+    
 }
+.title2{
+    background-image: linear-gradient(45deg, #15417b, #18d9eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+   
 
+}
 .lista-menu li {
     display: inline-block;
     font-size: 1.3em;
@@ -77,17 +84,14 @@ header ul li a:hover::before {
 }
 
 .login {
-    /* border: 2px solid #022534; */
-    /*padding: 10px 20px 10px 20px;*/
-    border-radius: 15px;
-    /*margin-right: 80px;*/
-    font-weight: bold;
-}
-
-/* // n está reconhecendo a cor branca --- verificar isso */
-.login:hover li a {
+    border: 2px solid #022534;
     background-color: #022534;
     color: #fff;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .title h1 {
@@ -96,12 +100,11 @@ header ul li a:hover::before {
 
 .main {
     display: flex;
-    flex-direction: row;
+    
     background-color: #EEF1FF;
     min-height: 90vh;
-    width: 100vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-left: 10px;
     
 }
@@ -123,17 +126,17 @@ aside h2 {
 }
 
 aside h2 span {
-    background-image: linear-gradient(45deg, #8E2DE2, #18d9eb);
+    background-image: linear-gradient(45deg, #15417b, #18d9eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-span {
+/* span {
     background-image: linear-gradient(45deg, #15417b, #18d9eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-}
+} */
 
 aside h3 {
     font-size: 3rem;
@@ -148,13 +151,24 @@ aside p {
 }
 
 .enviar {
-    margin-top: 20px;
-    margin-left: 100px;
-    height: 20px;
-    padding: 25px;
+    margin: 20px 0 0 100px;
+    padding: 22px;
     border-radius: 20px;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
+    background-color: #022534;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.enviar2 {
+    margin: 20px 0 25px 540px;
+    padding: 22px 60px 22px 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
     background-color: #022534;
     color: #fff;
     cursor: pointer;
@@ -291,5 +305,34 @@ input [type="submit"] {
 
 .card:hover:after {
     transform: rotate(13deg);
-    background-color: rgb(25,25,112);
+    background-color: rgb(	22, 33, 62);
+}
+
+.datah {
+    margin-top: .6em;
+    color: #fff;
+    margin-left: -30px;
+    background-color: #16213E;
+}
+
+.datah li {
+    width: 32%;
+    text-align: center;
+    font-size: 2.4em;
+    border-right: solid 1px #bdc3c7;
+    display: inline-block;
+    margin: 7rem 0 7rem 0;
+}
+
+.datah li:last-child {
+    border: none;
+}
+
+.datah li span {
+    display: block;
+    text-transform: uppercase;
+    font-size: .5em;
+    margin-top: 6.em;
+    font-weight: 700;
+    
 }
