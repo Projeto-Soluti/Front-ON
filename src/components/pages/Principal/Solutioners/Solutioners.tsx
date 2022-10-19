@@ -1,6 +1,5 @@
 import React from 'react';
 import './Solutioners.css';
-import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import van from './fotoGalera/van.png';
 import thais from './fotoGalera/thais.png';
@@ -13,6 +12,7 @@ import anab from './fotoGalera/anab.jpg';
 
 import git from './fotoGalera/logotipo-do-github.png'
 import linkedin from './fotoGalera/logotipo-do-linkedin.png'
+import AliceCarousel from 'react-alice-carousel';
 
 function Solutioners() {
 

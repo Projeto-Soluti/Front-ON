@@ -6,10 +6,10 @@ import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser cham
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
-import 'react-alice-carousel/lib/alice-carousel.css';
-import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
+import Solutioners from './Solutioners/Solutioners'
 import Parceiros from './Parceiros/Parceiros'
+
 
 
 function Principal() {
@@ -142,39 +142,23 @@ function Principal() {
                     </article>
                 </section>
 
+                    <section>
+                        <article>
+                            <FAQ />
+                        </article>
+                    </section>
 
                 <section>
-                    <article id="parceiros">
-
-                        <Parceiros/>
-
+                    <article id='solutioners'>
+                        <Solutioners />
                     </article>
                 </section>
 
 
-                <section>
-                    <article id="servicos">
-
-                    </article>
-                </section>
-
-                <section>
-                    <article>
-                        <FAQ/>
-                    </article>
-                    
-                </section>
-
-                <section>
-                    <article>
-                        <Solutioners/>
-                    </article>
-                </section>
-
-
-                <div>
-                    <Footer />
-                </div>
+            <div>
+                <Footer />
+            </div>
+                
 
 
 
