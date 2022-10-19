@@ -8,6 +8,8 @@ import vini from './fotoGalera/vini.png';
 import rurie from './fotoGalera/rurie.png';
 import mari from './fotoGalera/mari.png';
 import ana from './fotoGalera/ana.png';
+import anab from './fotoGalera/anab.jpg';
+
 import git from './fotoGalera/logotipo-do-github.png'
 import linkedin from './fotoGalera/logotipo-do-linkedin.png'
 import AliceCarousel from 'react-alice-carousel';
@@ -96,7 +98,7 @@ function Solutioners() {
 <div className='item'>
   <img src={ana} alt="Ana"></img>    
   </div>
-    <h1 className='nominho'>Ana Beatriz</h1>
+    <h1 className='nominho'>Ana Santos</h1>
     <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
     <ul>
       <li><a href="https://github.com/anabiax" target="_blank"> 
