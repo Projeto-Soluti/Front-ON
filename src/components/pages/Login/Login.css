@@ -3,7 +3,7 @@
 }
 
 .imagem {
-    background-image: url(https://i.imgur.com/uNk5lDN.png);
+    background-image: url(https://i.imgur.com/8E6y0bN.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -31,6 +31,7 @@
 flex-direction: column;
 align-items: center;
 justify-content: center;  
+padding-top: 20px;
 }
 
 .vrido{
