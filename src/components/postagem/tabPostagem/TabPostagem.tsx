@@ -13,7 +13,7 @@ function TabPostagem() {
   return (
     <>
       <TabContext value={value}>
-        <AppBar position="static" className="tabPost" style={{backgroundColor: '#06283d', color: 'white'}}>
+        <AppBar position="static" className="tabPost">
           <Tabs centered indicatorColor="secondary" onChange={handleChange} >
             <Tab label="Postagens" value="1" style={{marginRight: '45px', color: 'white'}} className='tab1' />
             <Tab label="Sobre-nós" value="2" style={{color: 'white'}} />

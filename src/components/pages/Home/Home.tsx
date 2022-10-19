@@ -9,6 +9,7 @@ import useLocalStorage from 'react-use-localstorage';
 import ModalPostagem from '../../postagem/modalPostagem/ModalPostagem';
 import ModalTema from '../../tema/modalTema/ModalTema';
 import TabPostagem from '../../postagem/tabPostagem/TabPostagem';
+import Card from './Card';
 
 function Home() {
 
@@ -26,24 +27,26 @@ function Home() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>The Tibian Blog!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Agua mole, pedra dura. Noob bate, Exura cura.</Typography>
+            <Grid container direction='row' justifyContent='center' alignItems='center' className='backgroundHome spaceBetween'>
+                <Grid item xs={4}>
+                    <Box>
+                        <Card />
+                    </Box>
+                </Grid>
+                <Grid alignItems='center' xs={4} className='glass1'>
+                    <Box paddingX={20}>
+                        <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao SolutiON!</Typography>
+                        <Typography variant='h5' gutterBottom component='h5' align="center" className='subtitulo'>As conexões, começam aqui.</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
+                        <Box marginRight={3}>
                             <ModalPostagem />
                         </Box>
                         <Box marginRight={1}>
                             <ModalTema />
                         </Box>
-                        
+
                     </Box>
-                </Grid>
-                <Grid item xs={6} className="divlogo">
-                    <img className="logo" src="https://i.imgur.com/XLLH2qM.png" alt="rurielogo" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

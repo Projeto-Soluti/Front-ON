@@ -1,5 +1,10 @@
 .tabPost {
-  background-color: #06283d !important;
+  background-color: rgba(157, 184, 209, 0) !important;
+  box-shadow: 0 8px 32px 0 rgba(159, 173, 219, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 50px;
   color: white;
-  
 }
