@@ -1,0 +1,66 @@
+.App{
+    margin-top: 80px;
+}
+
+article img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.item img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 600;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+}
+
+.cardsolu {
+    width: calc(34% - 22px);
+    padding: 40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.item:hover img{
+    transform: scale(0.8);
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.nominho, .funcaozinha{
+padding: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
+    background-color: rgb(153, 131, 131) !important;
+}
+
+.alice-carousel__prev-btn-item span, .alice-carousel__next-btn-item span {
+    color: black !important;
+    -webkit-text-fill-color: black
+}
