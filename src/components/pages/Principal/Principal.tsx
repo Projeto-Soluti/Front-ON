@@ -6,13 +6,13 @@ import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
 import 'react-alice-carousel/lib/alice-carousel.css';
-import AliceCarousel from "react-alice-carousel";
 import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
-
-
+import Parceiros from './Parceiros/Parceiros'
+import AliceCarousel from 'react-alice-carousel'
 
 function Principal() {
+    
     return (
         <>
             {/* cabeçalho*/}
@@ -151,7 +151,7 @@ function Principal() {
 
                 <section>
                     <article id="parceiros">
-
+                    <Parceiros/>
                     </article>
                 </section>
 
