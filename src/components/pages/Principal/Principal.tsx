@@ -5,8 +5,6 @@ import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser cham
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
-import 'react-alice-carousel/lib/alice-carousel.css';
-import AliceCarousel from "react-alice-carousel";
 import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
 
