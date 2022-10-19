@@ -190,6 +190,12 @@ function Principal() {
                     </article>
                 </section>
 
+                <section>
+                    <article id="solutioners">
+                        <Solutioners/>
+                    </article>
+                </section>
+
 
                 <section>
                     <article id='solutioners'>
