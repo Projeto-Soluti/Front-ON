@@ -18,9 +18,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import CadastroPostagem from './components/postagem/cadastroPostagem/CadastroPostagem'
 import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem'
 
-
-
-
 function App() {
   return (
     <Provider store={store} > 
