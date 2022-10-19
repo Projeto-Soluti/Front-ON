@@ -153,11 +153,8 @@ function Login() {
                                 Logar
                             </Button>
                         </Box>
-                    </form>
-
-                </Box>
-                <Box className="orientacoes">
-                    <Box marginRight={1}>
+                        <Box className="orientacoes">
+                    <Box>
                         <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta?</Typography>
                     </Box>
                     <Box>
@@ -166,6 +163,10 @@ function Login() {
                     </Link>
                     </Box>
                 </Box>
+                    </form>
+
+                </Box>
+                
             </Grid>
                 <Grid xs={12} md={6} className="imagem">
                

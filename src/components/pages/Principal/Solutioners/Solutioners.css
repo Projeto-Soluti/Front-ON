@@ -2,6 +2,23 @@
     margin-top: 80px;
 }
 
+.App h1 {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+
+.App h1:after {
+    content: '';
+    left: 50%;
+    /* position: absolute; */
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 3px;
+    background-color: #141b4e;
+
+}
+
 article img {
     width: 50px;
     height: 50px;
@@ -15,16 +32,16 @@ article img {
     border-radius: 50%;
 }
 
-  h1 {
+h1 {
     text-align: center;
     font-size: 1.5rem;
-    position: relative;
+    /* position: relative; */
     font-weight: 600;
 }
 
 h1:after {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
