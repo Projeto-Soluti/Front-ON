@@ -160,8 +160,7 @@ function Principal() {
 
                 <section>
                     <article>
-
-                        {/* FAQ FICARÁ AQUI */}
+                        <FAQ/>
                     </article>
                     
                 </section>
