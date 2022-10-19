@@ -7,8 +7,8 @@ import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
 import 'react-alice-carousel/lib/alice-carousel.css';
 import AliceCarousel from "react-alice-carousel";
-import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
+import Solutioners from './Solutioners/Solutioners'
 
 
 
@@ -176,6 +176,7 @@ function Principal() {
                     </article>
                 </section>
 
+                
                 <section>
                     <article id="faq">
 
@@ -186,6 +187,13 @@ function Principal() {
                 <section>
                     <article id="login">
 
+                    </article>
+                </section>
+
+
+                <section>
+                    <article id='solutioners'>
+                        <Solutioners />
                     </article>
                 </section>
 
