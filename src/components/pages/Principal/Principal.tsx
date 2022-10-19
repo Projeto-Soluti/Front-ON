@@ -1,4 +1,5 @@
 import Footer from './footerPrincipal/footerPrincipal'
+import FAQ from './FAQ/FAQ'
 import './Principal.css'
 import React from 'react'
 import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser chamada como variável lá embaixo - aí dá certo p/ fazer o deploy
@@ -9,14 +10,15 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import AliceCarousel from "react-alice-carousel";
 import { Link } from 'react-router-dom'
 import Solutioners from './Solutioners/Solutioners'
+import Parceiros from './Parceiros/Parceiros'
 
 
 
 function Principal() {
+    
     return (
         <>
             {/* cabeçalho*/}
-
             <header className="header-menu">
                 <div className='title'>
                     <h1>Soluti<span className='title2'>ON</span></h1>
@@ -30,6 +32,11 @@ function Principal() {
                         <li>
                             <a href="#valores">Valores</a>
                         </li>
+
+                        <li>
+                            <a href="#alcance">Alcance</a>
+                        </li>
+
                         <li>
                             <a href="#servicos">Serviços</a>
                         </li>
@@ -37,18 +44,15 @@ function Principal() {
                             <a href="#parceiros">Parceiros</a>
                         </li>
 
-                        <li>
-                            <a href="#alcance">Alcance</a>
-                        </li>
-                       
+                        
+
                         <Link to='/login'>
-
-                        <li>
-                            <a href="#login" className='login'>Login</a>
-                        </li>
+                            <li>
+                                <a href="#login" className='login'>Login</a>
+                            </li>
                         </Link>
-
                     </ul>
+                    
                 </Grid>
             </header>
 
@@ -59,9 +63,7 @@ function Principal() {
                 <aside>
                     <h2>Soluti<span>ON</span></h2>
                     <h3 className="text-gradient">Soluções empresariais</h3>
-                    <p>conectando alguma coisa e blablablaaaaaaaaaaaaaaa</p>
-                    <p>Promovendo pontes e agregando valor aos grandes negócios.</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    <p>Promovendo conexões resilientes e agregando valor aos potenciais negócios.</p>
 
 
                     <Link to='/cadastrousuario'>
@@ -79,17 +81,9 @@ function Principal() {
                     <article id="sobre" >
                         <div className='sectionSobre'>
                             <h3>Sobre nós<span>_</span></h3>
-                            <p>Melhor a gente se entender
-                                E o que tiver que acontecer
-                                Que dessa vez (seja pra sempre)
-                                Pra que brincar de se esconder
-                                Se o amor tocou eu e você
-                                De um jeito assim tão diferente
-                                Porque você não fica comigo hein?
-                                Porque você não fica comigo (eu fico)
-                                E deixa o meu amor te levar
-                                A solidão a dois é um castigo, é um castigo
-                                Sem essa de querer (complicar)</p>
+                            <p>A Soluti<span>ON</span> trata-se de uma rede social que tem por objetivo promover a conexão entre pequenas empresas, de modo a construir infraestruturas resilientes e fortalecer a inovação inclusiva, em conformidade com os preceitos da ODS 9.
+                                Dado o cenário em que a ocorrência da pandemia interviu diretamente na comunicação dos menores negócios (em termos de proporção), pensamos na proposição de uma rede social que solucionasse essa problemática da falta de acesso à uma rede maior que verdadeiramente levasse em consideração a necessidade de uma comunicação ágil à nível nacional. 
+                                Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o grupo integrador enxergou a possibilidade de atuar em uma área na qual há uma problemática sem uma específica <span>solução</span>. Logo, a ampliação dessa rede promoverá um maior fortalecimento do comércio nacional pautado na funcionalidade prática.</p>
                         </div>
                     </article>
                 </section>
@@ -104,26 +98,8 @@ function Principal() {
                                 <div className='card'> 
                                     <div className='sbox'>
                                         {/* <i class='fas fa-line-chart'></i> */}
-                                        <h4>Mindset</h4>
-                                        <p>O que aconteceu com aquele sentimento
-                                            Cadê aquele brilho do teu olhar (do teu olhar)
-                                            Não deixe que o tempo apague a nossa história
-                                            Porque ainda é tempo pra recomeçar</p>
-                                    </div>
-                                </div>
-
-                                <div className='card'> 
-                                    <div className='sbox'>
-                                        {/* <i class='fas fa-line-chart'></i> */}
                                         <h4>Missão</h4>
-                                        <p>Sinto que a cada dia vai se desgastando
-                                        O gosto dos seus beijos se amargando
-                                        Que estamos convivendo por obrigação
-                                        Você diz que não
-                                        Vejo você chorando ao sair do banho
-                                        Me surpreendo ao te ouvir dizendo
-                                        Que quer tentar recomeçar do zero
-                                        Tudo outra vez</p>
+                                        <p>Promover uma maior integração das pequenas empresas por meio de um canal de comunicação, de modo a construir um espaço resiliente e fortalecer a inovação inclusiva à nivel nacional.</p>
                                     </div>
                                 </div>
 
@@ -137,6 +113,15 @@ function Principal() {
                                             Vai ser pra sempre seu</p>
                                     </div>
                                 </div>
+
+                                <div className='card'> 
+                                    <div className='sbox'>
+                                        {/* <i class='fas fa-line-chart'></i> */}
+                                        <h4>Mindset</h4>
+                                        <p>Nossa força-motriz é a inovação, por isso incentivamos a autonomia de nossos usuários e colaboradores.
+                                            Além disso, fomentamos o acesso a serviços financeiros para obtenção de crédito com o objetivo de impulsionar o seu negócio.</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -145,23 +130,6 @@ function Principal() {
                 </Link>
                     </article>
                 </section>
-
-
-
-
-                <section>
-                    <article id="parceiros">
-
-                    </article>
-                </section>
-
-
-                <section>
-                    <article id="servicos">
-
-                    </article>
-                </section>
-
 
                 <section>
                     <article id="alcance">
@@ -176,27 +144,10 @@ function Principal() {
                     </article>
                 </section>
 
-                
-                <section>
-                    <article id="faq">
-
-                    </article>
+                    <article>
                 </section>
 
-
-                <section>
-                    <article id="login">
-
-                    </article>
-                </section>
-
-                <section>
-                    <article id="solutioners">
-                        <Solutioners/>
-                    </article>
-                </section>
-
-
+<<<<<<< HEAD
                 <section>
                     <article id='solutioners'>
                         <Solutioners />
@@ -207,6 +158,11 @@ function Principal() {
             <div>
                 <Footer />
             </div>
+=======
+                <div>
+                    <Footer />
+                </div>
+>>>>>>> 94824c023a5ba254b1ac1437a3d1e888ea83161d
 
 
 
