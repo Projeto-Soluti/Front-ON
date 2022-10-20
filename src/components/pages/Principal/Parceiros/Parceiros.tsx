@@ -22,7 +22,7 @@ function Parceiros(){
     return(
       <div>
 
-      <h1>Conheça nossos parceiros </h1>
+      <h1 className="tituloParceiros" >Conheça nossos parceiros </h1>
       
       <AliceCarousel
         mouseTracking

@@ -29,7 +29,7 @@ function Navbar() {
             closeOnClick: true,
             pauseOnHover: false,
             draggable: false, 
-            theme: 'colored',
+            theme: 'light',
             progress: undefined,
         })
         

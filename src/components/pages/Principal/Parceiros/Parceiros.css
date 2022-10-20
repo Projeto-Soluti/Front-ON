@@ -1,3 +1,25 @@
-.banco{
+.banco {
     padding: auto;
-    }
+}
+
+.tituloParceiros {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 20px 0 15px 0;
+    position: relative;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.tituloParceiros:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #141b4e;
+}

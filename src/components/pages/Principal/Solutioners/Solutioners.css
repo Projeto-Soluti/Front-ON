@@ -7,6 +7,29 @@
     padding-bottom: 10px;
 }
 
+.tituloSolu{
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 20px 0 15px 0;
+    position: relative;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.tituloSolu:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 3px;
+        background-color: #141b4e;
+    }
+
+
 .App h1:after {
     content: '';
     left: 50%;
