@@ -8,7 +8,7 @@ function footerPrincipal() {
                 <div className="itensFooter">
                     <div>
                         <div className="footerLeft">
-                            <h3 className="soluti" >SOLUTI <span className="on" > ON </span> </h3>
+                            <h3 className="soluti" >SOLUTI<span className="on" >ON</span> </h3>
 
                             <div  >
                                 <ul className="footerLinks">
@@ -30,7 +30,7 @@ function footerPrincipal() {
                                 </ul>
                             </div>
 
-                            <p className="footerCompanyName">Copyright © 2022 <strong>Soluti ON</strong> All rights reserved</p>
+                            <p className="footerCompanyName">Copyright © 2022 <strong>SolutiON</strong> All rights reserved</p>
                         </div>
                     </div>
                     <div>
@@ -54,7 +54,7 @@ function footerPrincipal() {
                         <div className="footerRight">
                             <p className="footerCompanyAbout">
                                 <span className= "sobrenos">Sobre nós</span>
-                                A <strong >SOLUTION</strong> é uma rede estratégica e ágil para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030.
+                                A <strong >SolutiON</strong> é uma rede estratégica para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030.
                             </p>
                             <div className="footerIcons">
                                 <a href="https://www.github.com/projeto-soluti" target="_blank">
