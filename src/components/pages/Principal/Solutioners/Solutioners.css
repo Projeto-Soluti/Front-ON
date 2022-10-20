@@ -2,21 +2,15 @@
     margin-top: 80px;
 }
 
-.App h1 {
-    font-size: 2.2rem;
-    padding-bottom: 10px;
-}
-
-.App h1:after {
+.App h2:after {
     content: '';
+    position: absolute;
     left: 50%;
-    /* position: absolute; */
     bottom: 0;
     transform: translateX(-50%);
-    width: 250px;
+    width: 150px;
     height: 3px;
     background-color: #141b4e;
-
 }
 
 article img {
@@ -32,22 +26,17 @@ article img {
     border-radius: 50%;
 }
 
-h1 {
+h2 {
     text-align: center;
-    font-size: 1.5rem;
-    /* position: relative; */
+    font-size: 2.2rem;
+    margin: 20px 0 15px 0;
+    position: relative;
     font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-h1:after {
-    content: '';
-    /* position: absolute; */
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 3px;
-}
 
 .cardsolu {
     width: calc(34% - 22px);
@@ -57,21 +46,51 @@ h1:after {
     cursor: pointer;
     position: relative;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .item:hover img{
-    transform: scale(0.8);
     cursor: pointer;
     opacity: 50%;
+    transform: scale(0.8);
 }
 
 .nominho, .funcaozinha{
-padding: auto;
+    padding: 25px;
+}
+
+.funcaozinha{
+    font-size: 23px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.loguinho{
+    display: flex;
+    flex-flow: row;
+    margin: 10%;  
+}
+
+svg:hover{
+    filter:drop-shadow(2px 2px 2px black);
+    scale: 1.2;
+    transform: scale(1.2);
+}
+
+svg{
+    color: black;
 }
 
 ul{
     list-style: none;
 }
+
 
 .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
     background-color: rgb(153, 131, 131) !important;

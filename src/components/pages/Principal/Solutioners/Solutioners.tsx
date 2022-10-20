@@ -9,10 +9,10 @@ import vini from './fotoGalera/vini.png';
 import rurie from './fotoGalera/rurie.png';
 import mari from './fotoGalera/mari.png';
 import ana from './fotoGalera/ana.png';
-import anab from './fotoGalera/anab.jpg';
+import LinkedinIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Icon } from '@material-ui/core';
 
-import git from './fotoGalera/logotipo-do-github.png'
-import linkedin from './fotoGalera/logotipo-do-linkedin.png'
 
 function Solutioners() {
 
@@ -32,15 +32,16 @@ function Solutioners() {
         </div>
           <h1 className='nominho'>Vanessa Isabella</h1>
           <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+          <div className='loguinho'>
           <ul>
-            <li><a href="https://github.com/VanessaIsabella" target="_blank"> 
-            <img src={git} alt="logo github"></img></a>
+            <li><a href="https://github.com/VanessaIsabella" target="_blank">
+              <GitHubIcon sx={{ fontSize: 68}}/></a>
           </li></ul>
           <ul>
-            <li><a href="https://www.linkedin.com/in/vanessa-isabella-oliveira/" target="_blank"> 
-            <img src={linkedin} alt="logo linkedin"></img></a>
+            <li><a href="https://www.linkedin.com/in/vanessa-isabella-oliveira/" target="_blank">
+              <LinkedinIcon sx={{ fontSize: 70 }}/></a>
           </li>
-          </ul>
+          </ul></div>
     </div>,
 
 <div className="cardsolu">
@@ -49,15 +50,14 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Pedro Henrique</h1>
     <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/Pddro1" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/Pddro1" target="_blank"><GitHubIcon sx={{ fontSize: 68 }}/></a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/pedro-camargo15/" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/pedro-camargo15/" target="_blank"> <LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>
 </div>,
 
 <div className="cardsolu">
@@ -66,15 +66,15 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Thais Melim</h1>
     <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/thaismelim" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/thaismelim" target="_blank"><GitHubIcon sx={{ fontSize: 68 }}/>
+      </a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/thais-melim/" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/thais-melim/" target="_blank"><LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>
 </div>,
 
 <div className="cardsolu">
@@ -83,15 +83,15 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Rurie Miguel</h1>
     <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/ruriemiguel" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/ruriemiguel" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
+      </a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/ruriemiguel/" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/ruriemiguel/" target="_blank"><LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>
 </div>,
 
 <div className="cardsolu">
@@ -100,15 +100,15 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Ana Santos</h1>
     <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/anabiax" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/anabiax" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
+      </a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/anabsantoss" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/anabsantoss" target="_blank"><LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>
 </div>,
 
 <div className="cardsolu">
@@ -117,15 +117,15 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Vinicius Lopes</h1>
     <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/viniciuslopes98" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/viniciuslopes98" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
+      </a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/vinicius-l-4181b9ba" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/vinicius-l-4181b9ba" target="_blank"><LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>
 </div>,
 
 <div className="cardsolu">
@@ -134,15 +134,15 @@ function Solutioners() {
   </div>
     <h1 className='nominho'>Mariana Melo</h1>
     <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <div className='loguinho'>
     <ul>
-      <li><a href="https://github.com/Marianadsm" target="_blank"> 
-      <img src={git} alt="logo github"></img></a>
+      <li><a href="https://github.com/Marianadsm" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }} />
+      </a>
     </li></ul>
     <ul>
-      <li><a href="https://www.linkedin.com/in/marianadsm/" target="_blank"> 
-      <img src={linkedin} alt="logo linkedin"></img></a>
+      <li><a href="https://www.linkedin.com/in/marianadsm/" target="_blank"><LinkedinIcon sx={{ fontSize: 70 }}/></a>
     </li>
-    </ul>
+    </ul></div>  
 </div>,
 
 
@@ -150,7 +150,7 @@ function Solutioners() {
   return (
     <div className="App">
 
-      <h1>Os Solutioners por trás das suas soluções</h1>
+      <h2>Os Solutioners por trás das suas soluções</h2>
       
       <AliceCarousel
         mouseTracking
@@ -160,11 +160,11 @@ function Solutioners() {
         controlsStrategy="alternate"
         infinite
         autoPlay
-        autoPlayStrategy="none"
+        autoPlayStrategy="all"
         autoPlayInterval={1000}
         animationDuration={1000}
         animationType="fadeout"
-        disableDotsControls
+        disableDotsControls={true}
       />
     </div>
   );
