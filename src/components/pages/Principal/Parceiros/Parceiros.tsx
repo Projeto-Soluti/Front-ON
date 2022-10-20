@@ -68,7 +68,7 @@ function Parceiros() {
 
   return (
     <div className="App">
-      <h1>Conheça nossos parceiros </h1>
+      <h1 className="tituloSolu" >Conheça nossos parceiros </h1>
 
       <Container>
 
@@ -85,7 +85,6 @@ function Parceiros() {
         autoPlayInterval={800}
         animationDuration={800}
         animationType="fadeout"
-        disableDotsControls={true}
         />
 
       </Container>
