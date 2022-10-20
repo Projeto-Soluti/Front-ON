@@ -1,3 +1,12 @@
+
+.banco{
+    padding: auto;
+    }
+
+    .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+        position: fixed;
+    }
+    
 .itemBanco img {
     margin: 0 10px;
     width: 300px;
@@ -18,3 +27,4 @@
     font-size: 2.2rem;
     padding-bottom: 10px;
 }
+
