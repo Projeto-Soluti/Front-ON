@@ -2,11 +2,11 @@ import Footer from './footerPrincipal/footerPrincipal'
 import FAQ from './FAQ/FAQ'
 import './Principal.css'
 import React from 'react'
-import img from '../Principal/imagem/bss.svg' // importando a imagem p/ ser chamada como variável lá embaixo - aí dá certo p/ fazer o deploy
+import img from '../Principal/imagem/quebra.svg' 
 import img2 from '../Principal/imagem/blockchain.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
-import 'react-alice-carousel/lib/alice-carousel.css';
+import 'react-alice-carousel/lib/alice-carousel.css'
 import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
 import Parceiros from './Parceiros/Parceiros'
@@ -70,7 +70,7 @@ function Principal() {
                 </aside>
 
                 <article>
-                    <img src={img2} alt="COLOCAR ALGUMA DESCRIÇÃO MINIMAMENTE COERENTE" />
+                    <img src={img} alt="COLOCAR ALGUMA DESCRIÇÃO MINIMAMENTE COERENTE" />
                 </article>
             {/* RETIRAR ESSE MAIN ASSIM QUE POSSÍVEL */}
             </Grid>        
@@ -105,10 +105,10 @@ function Principal() {
                                     <div className='sbox'>
                                         {/* <i class='fas fa-line-chart'></i> */}
                                         <h4>Valores</h4>
-                                        <p>To fazendo amor <br></br>
-                                            Com outra pessoa <br></br>
-                                            Mas meu coração <br></br>
-                                            Vai ser pra sempre seu</p>
+                                        <p>O que aconteceu com aquele sentimento
+                                            Cadê aquele brilho do teu olhar (do teu olhar)
+                                            Não deixe que o tempo apague a nossa história
+                                            Porque ainda é tempo pra recomeçar</p>
                                     </div>
                                 </div>
 

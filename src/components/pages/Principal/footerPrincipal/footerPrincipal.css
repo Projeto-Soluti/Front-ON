@@ -15,6 +15,12 @@
     align-items: center !important;
 }
 
+.on {
+    background-image: linear-gradient(45deg, #15417b, #1197a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .itensFooter{
     display: flex;
     direction: row;
@@ -123,7 +129,8 @@ i.email,i.telefone, i.local{
 }
 
 .sobrenos{
-     color: #18d9eb !important;
+    color: #92999f !important;
+    font-size: 20px !important; 
 }
 
 .footerLinks li a{

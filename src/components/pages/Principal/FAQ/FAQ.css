@@ -22,7 +22,10 @@
 
 .formFAQ{
     background-color: #eef1ff !important;
-    
+}
+
+.faq {
+    margin: 3rem 0;
 }
 
 .questionFAQ{
@@ -37,5 +40,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto; 
 }

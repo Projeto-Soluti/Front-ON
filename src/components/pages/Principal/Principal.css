@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000px;
+    z-index: 5;
     position: fixed;
     top: 0;
     width: 100%;
@@ -146,7 +146,7 @@ aside {
 
 .main img {
     margin-top: 2.7rem;;
-    width: 800px;
+    width: 880px;
     height: 650px;
     justify-content: center;
     align-items: center;
