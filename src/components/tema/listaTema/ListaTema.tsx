@@ -2,6 +2,7 @@ import { Container, Box, Card, CardContent, Typography, CardActions, Button } fr
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import { TokenState } from '../../../store/token/TokenReducer';
 import Tema from '../../models/Tema';
 import { busca } from '../../services/Service';
@@ -16,7 +17,16 @@ function ListaTema() {
 
   useEffect(() => {
     if(token === '') {
-      alert('Você precisa estar Logado!')
+      toast.warn('Você precisa estar logado.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
       navigate('/login')
     }
   }, [token])
