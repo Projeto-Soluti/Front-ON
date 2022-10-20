@@ -28,7 +28,7 @@ function Solutioners() {
   const items = [
     <div className="cardsolu">
       <div className='item'>
-        <img src={van} alt="Vanessa"></img>    
+        <img src={van} alt="Van"></img>    
         </div>
           <h1 className='nominho'>Vanessa Isabella</h1>
           <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
