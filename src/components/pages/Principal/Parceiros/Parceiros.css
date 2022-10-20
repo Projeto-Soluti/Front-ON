@@ -1,17 +1,20 @@
-.banco img{
-    gap: 12px;
+.itemBanco img {
     margin: 0 10px;
-    width:  300px;
-    display: row !important;
-    padding-right: 20px;
-    padding-left: 20px;     
-    }
-
-    .item {
+    width: 300px;
+    height: 300px;
+    padding: 0 20px;
+    object-fit: scale-down;
+  }
+  
+  .item {
     display: flex !important;
     direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%
-    
-    }
+    width: 100%;
+  }
+
+  .App h1 {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
