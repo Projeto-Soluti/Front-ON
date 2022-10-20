@@ -103,11 +103,6 @@ function Login() {
     }
   }, [respUserLogin.token])
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> be37f43a2c3ccb94fec116a242c1b99ec2218e4f
     return (
         
         <Grid container className="container body" >
