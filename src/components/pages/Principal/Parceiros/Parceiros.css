@@ -1,3 +1,7 @@
 .banco{
     padding: auto;
     }
+
+    .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+        position: fixed;
+    }

@@ -36,7 +36,8 @@ function Parceiros(){
         autoPlayInterval={1000}
         animationDuration={1000}
         animationType="fadeout"
-        disableDotsControls/>
+        disableDotsControls={true}
+        />
     </div>
       )
 }
