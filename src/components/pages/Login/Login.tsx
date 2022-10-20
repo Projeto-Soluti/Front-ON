@@ -47,29 +47,29 @@ function Login() {
     event.preventDefault();
     try{
       await login('usuarios/logar', userLogin, setRespUserLogin)
-      toast.success('Logado com Sucesso!', {
-        position: "top-center",
-        autoClose: 2000,
+      toast.success('Usuário logado com sucesso!', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: false,
+        pauseOnHover: true,
         draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
+        progress: 0,
+        theme: "light",
+    })
       
       
     }catch(error){
-      toast.error('Dados do usuário inconsistentes. Erro ao Logar!', {
-        position: "top-center",
-        autoClose: 2000,
+      toast.error('Dados de usuário inconsistentes. Erro ao logar.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: false,
+        pauseOnHover: true,
         draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
+        progress: 0,
+        theme: "light",
+    })
     }
   }
 
@@ -102,10 +102,6 @@ function Login() {
       navigate('/home')
     }
   }, [respUserLogin.token])
-
-
-
-
 
     return (
         

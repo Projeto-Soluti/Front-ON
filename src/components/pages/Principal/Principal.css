@@ -200,7 +200,7 @@ aside p {
     border-radius: 20px;
     border: none;
     font-size: 17px;
-    background-color: #022534;
+    background-color: #1b2124;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -286,7 +286,7 @@ input [type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0px;
 }
 
 /* a partir daqui já quebra o blur */
@@ -300,7 +300,7 @@ input [type="submit"] {
     cursor: pointer;
     transition: 3s;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .sbox h4 {
