@@ -1,3 +1,17 @@
-.banco{
-    padding: auto;
+.banco img{
+    gap: 12px;
+    margin: 0 10px;
+    width:  300px;
+    display: row !important;
+    padding-right: 20px;
+    padding-left: 20px;     
+    }
+
+    .item {
+    display: flex !important;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+    
     }
