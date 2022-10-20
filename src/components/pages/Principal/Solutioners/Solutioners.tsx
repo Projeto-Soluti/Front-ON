@@ -150,7 +150,7 @@ function Solutioners() {
   return (
     <div className="App">
 
-      <h1>Os Solutioners por trás das suas soluções</h1>
+      <h1 className="tituloSolu">Os Solutioners por trás das suas soluções</h1>
       
       <AliceCarousel
         mouseTracking
