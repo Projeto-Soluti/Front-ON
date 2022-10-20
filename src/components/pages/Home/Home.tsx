@@ -9,6 +9,7 @@ import useLocalStorage from 'react-use-localstorage';
 import ModalPostagem from '../../postagem/modalPostagem/ModalPostagem';
 import ModalTema from '../../tema/modalTema/ModalTema';
 import TabPostagem from '../../postagem/tabPostagem/TabPostagem';
+import { toast } from 'react-toastify';
 
 function Home() {
 
@@ -19,7 +20,16 @@ function Home() {
 
     useEffect(() => {
         if (token == '') {
-            alert("Você precisa estar logado")
+            toast.warn('Você precisa estar logado.', {
+                position: 'top-right', 
+                autoClose: 2000, //2 segundos
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: 0,
+                theme: "light",
+            })
             navigate("/login")
         }
     }, [token])

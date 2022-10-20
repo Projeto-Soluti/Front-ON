@@ -53,16 +53,16 @@ function CadastroUsuario() {
     if (confirmarSenha === user.senha) {
       try {
         await cadastroUsuario("usuarios/cadastrar", user, setUserResult);
-        toast.success("Usuário cadastrado com sucesso!", {
-          position: "top-right",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: 0,
-          theme: "light",
-        });
+        toast.success('Falha ao cadastrar o usuário. Por favor, confira os campos.', {
+                    position: 'top-right', 
+                    autoClose: 2000, //2 segundos
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: 0,
+                    theme: "light",
+                })
       } catch (error) {
         toast.error(
           "Falha ao cadastrar o usuário. Por favor, confira os campos.",

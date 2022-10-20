@@ -33,9 +33,10 @@ function Parceiros() {
       </div>
     </div>,
 
+
     <div className="itemBanco">
       <div className="banco">
-        <a href="https://www.daycoval.com.br/">
+        <a href="https://www.sicredi.com.br/home/">
           <img
             src="https://www.sicredi.com.br/media/coop/filer_public/2020/05/13/logo_para__noticias_-_site.jpg"
             alt="Sicredi"
@@ -70,6 +71,7 @@ function Parceiros() {
       <h1>Conheça nossos parceiros </h1>
 
       <Container>
+
       <AliceCarousel
         mouseTracking
         disableButtonsControls={false}

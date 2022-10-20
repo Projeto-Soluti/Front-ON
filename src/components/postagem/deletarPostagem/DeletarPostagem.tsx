@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { TokenState } from '../../../store/token/TokenReducer'
 import Postagem from '../../models/Postagem'
 import { buscaId, deleteId, post } from '../../services/Service'
+import { toast } from "react-toastify";
 
 function DeletarPostagem() {
 
@@ -20,8 +21,17 @@ function DeletarPostagem() {
 
   useEffect(() => {
     if(token === ''){
-      alert('Você precisa estar Logado!')
-      navigate('/login')
+      toast.warn('Você precisa estar logado.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })      
+    navigate('/login')
     }
   }, [token])
 
@@ -45,9 +55,27 @@ function DeletarPostagem() {
       await deleteId(`/postagens/${id}`, {
         headers: {'Authorization': token}
       })
-      alert('Postagem deletada com Sucesso')
+      toast.success('Postagem deletada com sucesso!', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
     } catch (error) {
-      alert('Erro ao Deletar')
+      toast.error('Falha ao deletar postagem.', {
+        position: 'top-right', 
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    })
     }
   }
 
@@ -75,7 +103,7 @@ function DeletarPostagem() {
                   variant="contained"
                   className="marginLeft"
                   size="large"
-                  style={{backgroundColor: '#c21010', color: 'white'}}
+                  style={{ backgroundColor: "#C21010", color: "white", fontWeight: 'bold' }}
                 >
                   Sim
                 </Button>
@@ -85,7 +113,7 @@ function DeletarPostagem() {
                   onClick={nao}
                   variant="contained"
                   size="large"
-                  style={{ backgroundColor: "#06283d", color: "white" }}
+                  style={{ backgroundColor: "#d8d8d8", color: "white", fontWeight: 'bold' }}
                 >
                   Não
                 </Button>

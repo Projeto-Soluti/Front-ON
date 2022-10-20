@@ -10,8 +10,6 @@ import { toast } from 'react-toastify'
 import './CadastroPostagem.css'
 import User from '../../models/User';
 
-
-
 function CadastroPostagem() {
 
   let navigate = useNavigate();
@@ -204,7 +202,7 @@ function CadastroPostagem() {
             <Button
               type='submit'
               variant='contained'
-              style={{ backgroundColor: "#06283d", color: "white" }}
+              style={{ backgroundColor: "#d8d8d8", color: "white", fontWeight:'bold'}}
               >
                 Postar
             </Button>
