@@ -22,14 +22,14 @@ function Navbar() {
 
     function goLogout() {
         dispatch(addToken(''));
-        toast.info('Usuário deslogado', {
-            position: 'top-right',
+        toast.info('O usuário não está mais logado.', {
+            position: 'top-right', 
             autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
+            draggable: false, 
+            theme: 'light',
             progress: undefined,
         })
         
@@ -41,26 +41,25 @@ function Navbar() {
 
     if(token !== "") {
         navBarComponent = 
-        <AppBar position="static" style={{ backgroundColor: "#212121", color: "white" }}>
+        <AppBar position="static" style={{ backgroundColor: "#EEF1FF", color: "#333" }} className='titulinhu'>
         <Toolbar >
-            <Box className='blogPessoal'>
-                <Box>
-                    <Typography variant="h5" >
-                        SolutiON
-                    </Typography>
+                <Box className='blogPessoal'>
+                    <div className='title'>
+                        <h1>Soluti<span className='title2'>ON</span></h1>
+                    </div>
                 </Box>
-            </Box>
-
+            
             
             <Grid container justifyContent="flex-end" style={{ marginRight: '70px' }}>
             <Box className='menu' > 
                 <Link to='/home' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
-                        <Typography variant="h6" color="inherit">
+                        <Typography variant="h6" color="inherit" >
                             Home
                         </Typography>
                     </Box>
                 </Link>
+
                 <Link to='/postagens' className='text-decorator-none'>
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
@@ -83,19 +82,18 @@ function Navbar() {
                     </Box>
                 </Link>
 
-
-
                     {/* <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             Logout
                         </Typography>
                     </Box> */}
 
-                    <Box mx={1} className="logout" onClick={goLogout}> 
-                        <Typography style={{ paddingLeft: '12px', fontWeight: 'bold' }} variant="h6" color="inherit">
-                            LOGOUT
-                        </Typography>
-
+                    <Box mx={1} className='text-decorator-none' onClick={goLogout}> 
+                        <Link to='/' >
+                            <li>
+                                <a href="#login" className='logout'>LOGOUT</a>
+                            </li>
+                        </Link>
                     </Box>
 
                 </Box>

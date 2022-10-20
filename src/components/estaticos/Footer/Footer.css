@@ -1,38 +1,200 @@
-.box1{
-    background-color: #06283D;
-    height: 120px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.footer {
+    display: flex;
+    direction: row;
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif, bold;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center !important;
 }
 
-.subbox {
+.itensFooter{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    direction: row;
+}
+
+.footerLeft, .footer-distributed .footerCenter, .footer-distributed, .footerRight {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 40px
+}
+
+
+
+/* footer-esquerda */
+
+ .footerLeft {
+    width: 30vw;
+    align-items: left
+}
+
+.footer-distributed, .soluti {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 30px;
+}
+
+/*links*/
+
+.footer-distributed ,.footerLinks {
+    color: #ffffff !important;
+    margin: 20px 0 12px;
+    
+}
+
+.footer-distributed, .footerLinks a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerCompanyName {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
     padding-top: 10px;
 }
 
-.sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*footer - centro*/
+.footerCenter {
+    width: 20vw;
+    align-items: center !important;
+    
 }
 
-.box2{
-    background-color: #121212;
-    height: 60px;
-}
-
-.redes{
-    font-size: 60px !important; 
-    color: white;
-
-}
-.textos{
+.footerCenter i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
     text-align: center;
-    color: white;
-} 
-
-.container {
-    direction: row;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
     justify-content: center;
-    align-items: center;
 }
+
+ .footerCenter, i.email {
+    font-size: 17px;
+    line-height: 38px;
+    padding: 0
+    
+}
+
+i.email,i.telefone, i.local{
+   padding-bottom: 0px;
+}
+
+
+ .footerCenter p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+ .footerCenter   {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+    align-items: center !important;
+    justify-content: center;
+    margin-top:42px;
+    padding: 2px
+}
+
+.footerCenter p a {
+    color: #3F71EA;
+    text-decoration: none;
+    
+}
+
+.sobrenos{
+     color: #18d9eb !important;
+}
+
+.footerLinks li a{
+    padding-right: 25px;
+    list-style: none !important;
+}
+
+
+/* footer-direita*/
+
+ .footerRight {
+    width: 35vw;
+    align-items: right !important;
+}
+
+.footerCompanyAbout {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footerCompanyAbout span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footerIcons {
+    margin-top: 25px;
+}
+
+ .footerIcons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+ .footerIcons a:hover {
+    background-color: #3F71EA;
+}
+
+.footerLinks, a:hover {
+    color: #3F71EA;
+    display: inline-flex;
+    
+}
+
+@media (max-width: 880px) {
+     .footerLeft, .footer .footerCenter, .footerRight {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+     .footerCenter i {
+        margin-left: 0;
+        
+    }
+}       
+
+

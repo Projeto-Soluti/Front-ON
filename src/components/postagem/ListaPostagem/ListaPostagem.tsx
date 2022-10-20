@@ -29,7 +29,7 @@ function ListaPostagem() {
 
   useEffect(() => {
     if (token === "") {
-      // alert('Você precisa estar Logado!')
+  
       toast.warn("Você precisa estar logado.", {
         position: "top-right",
         autoClose: 2000,
@@ -100,7 +100,7 @@ function ListaPostagem() {
                     <Button
                       variant="contained"
                       size="medium"
-                      style={{backgroundColor: '#06283d'}}
+                      style={{backgroundColor: '#d8d8d8'}}
                     >
                       Atualizar
                     </Button>

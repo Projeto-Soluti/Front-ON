@@ -151,6 +151,7 @@ function Solutioners() {
     <div className="App">
 
       <h2>Os Solutioners por trás das suas soluções</h2>
+
       
       <AliceCarousel
         mouseTracking
