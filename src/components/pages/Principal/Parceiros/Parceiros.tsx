@@ -85,8 +85,11 @@ function Parceiros() {
         autoPlayInterval={800}
         animationDuration={800}
         animationType="fadeout"
-      />
+        disableDotsControls={true}
+        />
+
       </Container>
+
     </div>
   );
 }
