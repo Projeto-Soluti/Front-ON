@@ -291,7 +291,6 @@ input [type="submit"] {
     margin-bottom: 0px;
 }
 
-/* a partir daqui já quebra o blur */
 .card {
     width: calc(34% - 22px);
     background: #eef1ff;
@@ -341,6 +340,11 @@ input [type="submit"] {
 .card:hover:after {
     transform: rotate(13deg);
     background-color: rgb(2,37,52);
+}
+
+.iconlogo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .datah {
