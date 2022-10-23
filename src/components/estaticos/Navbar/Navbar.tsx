@@ -43,7 +43,7 @@ function Navbar() {
         navBarComponent = 
         <AppBar position="static" style={{ backgroundColor: "#EEF1FF", color: "#333" }} className='titulinhu'>
         <Toolbar >
-                <Box className='blogPessoal'>
+                <Box className='tituloprincipal'>
                     <div className='title'>
                         <h1>Soluti<span className='title2'>ON</span></h1>
                     </div>
@@ -85,13 +85,16 @@ function Navbar() {
                     {/* <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             Logout
+
+                        className='text-decorator-none'
+
                         </Typography>
                     </Box> */}
 
-                    <Box mx={1} className='text-decorator-none' onClick={goLogout}> 
+                    <Box mx={1} className='botaologout' onClick={goLogout}> 
                         <Link to='/' >
                             <li>
-                                <a href="#login" className='logout'>LOGOUT</a>
+                                <a href="#logout" className='logout'>LOGOUT</a>
                             </li>
                         </Link>
                     </Box>
