@@ -29,12 +29,12 @@ function Home() {
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center' className='backgroundHome spaceBetween'>
                 <Grid item xs={4}>
-                    <Box>
+                    <Box style={{margin: '45px'}}>
                         <Card />
                     </Box>
                 </Grid>
                 <Grid alignItems='center' xs={4} className='glass1'>
-                    <Box paddingX={20}>
+                    <Box paddingX={10}>
                         <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao SolutiON!</Typography>
                         <Typography variant='h5' gutterBottom component='h5' align="center" className='subtitulo'>As conexões, começam aqui.</Typography>
                     </Box>

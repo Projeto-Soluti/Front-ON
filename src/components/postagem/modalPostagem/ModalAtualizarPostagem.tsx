@@ -1,9 +1,10 @@
 import { Button, createStyles, makeStyles, Theme } from "@material-ui/core";
-import { Box, Modal } from "@mui/material";
+import { Modal } from '@mui/material';
+import { Box } from "@mui/material";
 import CloseIcon from '@material-ui/icons/Close';
 import React from "react";
-import CadastrarTema from "../cadastrarTema/CadastrarTema";
-import './ModalTema.css'
+import CadastroPostagem from "../cadastroPostagem/CadastroPostagem";
+import './ModalAtualizarPostagem.css'
 
 
 function getModalStyle() {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-function ModalTema() {
+function ModalAtualizarPostagem() {
     const classes = useStyles();
     const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
@@ -50,17 +51,17 @@ function ModalTema() {
 
             </Box>
 
-            <CadastrarTema />
+            <CadastroPostagem />
 
         </div>
     );
 
     return (
-        <div>
-            <Button
+        <div className="radius">
+            <Button className='atualizar'
                 variant="outlined"
-                className="btnModal novoTema"
-                onClick={handleOpen}>Novo tema</Button>
+                onClick={handleOpen}><span>Atualizar</span><i></i>
+            </Button>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -73,4 +74,4 @@ function ModalTema() {
     );
 }
 
-export default ModalTema;
+export default ModalAtualizarPostagem;

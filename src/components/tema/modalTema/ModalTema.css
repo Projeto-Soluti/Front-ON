@@ -1,0 +1,33 @@
+.cursor {
+    cursor: pointer;
+}
+
+.btnModal {
+    color: white;
+}
+
+.radius {
+    border-radius: 10%;
+}
+
+.novoTema {
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    font-size: 15px;
+}
+
+.novoTema:hover {
+    color: #0044fd !important;
+    box-shadow: 0 0 45px #0044fd;
+}
+
+.novoTema span {
+    position: relative;
+}
+
+.novoTema i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}

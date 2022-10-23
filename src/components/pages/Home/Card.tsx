@@ -54,7 +54,7 @@ export default function RecipeReviewCard() {
             <CardHeader
                 avatar={
                     <Avatar aria-label="recipe" className={classes.avatar}>
-                        
+
                     </Avatar>
                 }
                 action={
