@@ -2,8 +2,9 @@ import Footer from './footerPrincipal/footerPrincipal'
 import FAQ from './FAQ/FAQ'
 import './Principal.css'
 import React from 'react'
-import img from '../Principal/imagem/quebra.svg' 
-import img2 from '../Principal/imagem/blockchain.png'
+import img from '../Principal/imagem/teams.png' 
+import img2 from '../Principal/imagem/talks.png'
+import img3 from '../Principal/imagem/rede.png'
 import { Grid } from '@material-ui/core'
 import { Box } from '@mui/material'
 import 'react-alice-carousel/lib/alice-carousel.css'
@@ -34,15 +35,9 @@ function Principal() {
                         <li>
                             <a href="#alcance">Alcance</a>
                         </li>
-
-                        <li>
-                            <a href="#servicos">Serviços</a>
-                        </li>
                         <li>
                             <a href="#parceiros">Parceiros</a>
                         </li>
-
-                        
 
                         <Link to='/login'>
                             <li>
@@ -65,14 +60,13 @@ function Principal() {
 
 
                     <Link to='/cadastrousuario'>
-                        <input type="submit" value="Cadastre a sua empresa" className="enviar" />
+                        <input type="submit" value="Cadastre a sua empresa!" className="enviar" />
                     </Link>
                 </aside>
 
                 <article>
-                    <img src={img} alt="COLOCAR ALGUMA DESCRIÇÃO MINIMAMENTE COERENTE" />
+                    <img src={img} alt="Personagens inanimados dialogando." />
                 </article>
-            {/* RETIRAR ESSE MAIN ASSIM QUE POSSÍVEL */}
             </Grid>        
 
                 <section className='sobre'>
@@ -88,7 +82,7 @@ function Principal() {
 
                 <section className='valores'>
                     <article id="valores">
-                        <div >
+                        <div>
                             <h3>Valores da Soluti<span>ON</span></h3>
                         </div>
                         <div>

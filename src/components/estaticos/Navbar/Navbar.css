@@ -19,10 +19,10 @@
     text-decoration: none !important;
 }
 
-.blogPessoal {
+/* .tituloprincipal {
     display: flex;
     margin-right: 2vh;
-}
+} */
 
 .menu {
     display: flex !important;
@@ -39,18 +39,14 @@
     padding: 10px 30px 10px 30px;
     border-radius: 15px;
     font-weight: bold;
+    text-decoration: none !important; 
 }
 
+.menu li a {
+    display: inline-block;
+    text-decoration: none !important;
+}
 
-/* .logout::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    color: #fff !important;
-    width: 100%;
-    height: 0 !important;
-    background: #333;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
-} */
+.botaologout li a {
+    text-decoration: none !important;
+}
