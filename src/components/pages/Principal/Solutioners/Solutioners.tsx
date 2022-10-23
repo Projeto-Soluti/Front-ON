@@ -31,7 +31,7 @@ function Solutioners() {
         <img src={van} alt="Van"></img>    
         </div>
           <h1 className='nominho'>Vanessa Isabella</h1>
-          <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+          <span className='funcaozinha'>Desenvolvedora Full Stack Java Jr.</span>
           <div className='loguinho'>
           <ul>
             <li><a href="https://github.com/VanessaIsabella" target="_blank">
@@ -49,7 +49,7 @@ function Solutioners() {
   <img src={pedro} alt="Pedro"></img>    
   </div>
     <h1 className='nominho'>Pedro Henrique</h1>
-    <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedor Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/Pddro1" target="_blank"><GitHubIcon sx={{ fontSize: 68 }}/></a>
@@ -65,7 +65,7 @@ function Solutioners() {
   <img src={thais} alt="Thais"></img>    
   </div>
     <h1 className='nominho'>Thais Melim</h1>
-    <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedora Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/thaismelim" target="_blank"><GitHubIcon sx={{ fontSize: 68 }}/>
@@ -82,7 +82,7 @@ function Solutioners() {
   <img src={rurie} alt="Rurie"></img>    
   </div>
     <h1 className='nominho'>Rurie Miguel</h1>
-    <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedor Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/ruriemiguel" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
@@ -99,7 +99,7 @@ function Solutioners() {
   <img src={ana} alt="Ana"></img>    
   </div>
     <h1 className='nominho'>Ana Santos</h1>
-    <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedora Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/anabiax" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
@@ -116,7 +116,7 @@ function Solutioners() {
   <img src={vini} alt="Vini"></img>    
   </div>
     <h1 className='nominho'>Vinicius Lopes</h1>
-    <span className='funcaozinha'>Desenvolvedor Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedor Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/viniciuslopes98" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }}/>
@@ -133,7 +133,7 @@ function Solutioners() {
   <img src={mari} alt="Mari"></img>    
   </div>
     <h1 className='nominho'>Mariana Melo</h1>
-    <span className='funcaozinha'>Desenvolvedora Fullstack Java Jr.</span>
+    <span className='funcaozinha'>Desenvolvedora Full Stack Java Jr.</span>
     <div className='loguinho'>
     <ul>
       <li><a href="https://github.com/Marianadsm" target="_blank"> <GitHubIcon sx={{ fontSize: 68 }} />
@@ -150,7 +150,7 @@ function Solutioners() {
   return (
     <div className="App">
 
-      <h2>Os Solutioners por trás das suas soluções</h2>
+      <h2>Os Soluti<span>ON</span>ers por trás das suas soluções</h2>
 
       
       <AliceCarousel
