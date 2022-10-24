@@ -53,7 +53,7 @@ function CadastroUsuario() {
     if (confirmarSenha === user.senha) {
       try {
         await cadastroUsuario("usuarios/cadastrar", user, setUserResult);
-        toast.success('Falha ao cadastrar o usuário. Por favor, confira os campos.', {
+        toast.success('Empresa cadastrada com sucesso!', {
                     position: 'top-right', 
                     autoClose: 2000, //2 segundos
                     hideProgressBar: false,
@@ -65,7 +65,7 @@ function CadastroUsuario() {
                 })
       } catch (error) {
         toast.error(
-          "Falha ao cadastrar o usuário. Por favor, confira os campos.",
+          "Falha ao cadastrar a empresa. Por favor, confira os campos.",
           {
             position: "top-right",
             autoClose: 2000,
