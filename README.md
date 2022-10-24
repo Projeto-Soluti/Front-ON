@@ -44,7 +44,11 @@ https://soluti.netlify.app/
 	
 ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![FIGMA](https://img.shields.io/badge/Figma-ED8B00?style=for-the-badge&logo=figma&logoColor=white)
 
 ## Versão: React 17
 
@@ -100,7 +104,7 @@ Flex box - elementos organizados dentro de containers.
 	<li>CRUD;</li>
 </ul>
 <ul>
-	<li>Mui/material;;</li>
+	<li>Mui/material;</li>
 </ul>
 <ul>
 	<li>Toastify personalizado;</li>
