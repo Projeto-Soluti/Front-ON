@@ -1,5 +1,5 @@
 .feed {
-  display: block;
+  display: flex;
 }
 
 .text-decorator-none{

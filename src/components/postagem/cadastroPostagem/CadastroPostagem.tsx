@@ -24,7 +24,7 @@ function CadastroPostagem() {
   )
 
   const [tema, setTema] = useState<Tema>({
-    id:0,
+    id: 0,
     descricao: '',
   });
 
@@ -32,13 +32,14 @@ function CadastroPostagem() {
     id: 0,
     titulo: '',
     texto: '',
+    foto: '',
     data: '',
     tema: null,
   })
 
   const [usuario, setUsuario] = useState<User>({
     id: +userId,
-    nome: '', 
+    nome: '',
     usuario: '',
     cnpj: '',
     senha: '',
@@ -47,10 +48,10 @@ function CadastroPostagem() {
 
 
   useEffect(() => {
-    if(token === '') {
+    if (token === '') {
       // alert('Você precisa estar logado!')
       toast.warn('Você precisa estar logado.', {
-        position: 'top-right', 
+        position: 'top-right',
         autoClose: 2000, //2 segundos
         hideProgressBar: false,
         closeOnClick: true,
@@ -58,7 +59,7 @@ function CadastroPostagem() {
         draggable: true,
         progress: 0,
         theme: "light",
-    })
+      })
       navigate("/login")
     }
   }, [token])
@@ -75,7 +76,7 @@ function CadastroPostagem() {
 
   async function findByIdPostagem(id: string) {
     await buscaId(`/postagens/${id}`, setPostagem, {
-      headers: {"Authorization": token,},
+      headers: { "Authorization": token, },
     });
   }
 
@@ -88,7 +89,7 @@ function CadastroPostagem() {
 
   async function getTemas() {
     await busca("/temas", setTemas, {
-      headers: {'Authorization': token}
+      headers: { 'Authorization': token }
     })
   }
 
@@ -104,43 +105,43 @@ function CadastroPostagem() {
     event.preventDefault();
 
     if (id !== undefined) {
-        put(`/postagens`, postagem, setPostagem, {
-            headers: { 
-                Authorization: token 
-            },
-        })
-        toast.success('Postagem atualizada com sucesso!', {
-          position: 'top-right', 
-          autoClose: 2000, //2 segundos
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: 0,
-          theme: "light",
+      put(`/postagens`, postagem, setPostagem, {
+        headers: {
+          Authorization: token
+        },
+      })
+      toast.success('Postagem atualizada com sucesso!', {
+        position: 'top-right',
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
       })
 
 
     } else {
-        post(`/postagens`, postagem, setPostagem, {
-            headers: { 
-                Authorization: token 
-            },
-          })
-          toast.success('Postagem cadastrada com sucesso!', {
-            position: 'top-right', 
-            autoClose: 2000, //2 segundos
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: 0,
-            theme: "light",
-        })
-          
+      post(`/postagens`, postagem, setPostagem, {
+        headers: {
+          Authorization: token
+        },
+      })
+      toast.success('Postagem cadastrada com sucesso!', {
+        position: 'top-right',
+        autoClose: 2000, //2 segundos
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+      })
+
     }
     navigate('/postagens')
-}
+  }
 
 
 
@@ -153,11 +154,11 @@ function CadastroPostagem() {
             color='textSecondary'
             component='h1'
             align='center'
-            >
-              Postagens
+          >
+            Postagens
           </Typography>
 
-          <TextField 
+          <TextField
             value={postagem.titulo}
             onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarPostagem(event)}
             variant='filled'
@@ -169,13 +170,25 @@ function CadastroPostagem() {
             required
           />
 
-          <TextField 
+          <TextField
             value={postagem.texto}
             onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarPostagem(event)}
             variant='filled'
             id='textoPostagem'
             name='texto'
             label='Texto'
+            fullWidth
+            margin='normal'
+            required
+          />
+
+          <TextField
+            value={postagem.foto}
+            onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarPostagem(event)}
+            variant='filled'
+            id='fotoPostagem'
+            name='foto'
+            label='foto'
             fullWidth
             margin='normal'
             required
@@ -188,12 +201,12 @@ function CadastroPostagem() {
               labelId='tema-label'
               id='tema-label'
               onChange={(event) => buscaId(`/temas/${event.target.value}`, setTema, {
-                headers: {'Authorization': token}
+                headers: { 'Authorization': token }
               })}
             >
 
               {temas.map((item) => (
-                <MenuItem value={item.id} style={{ display: 'block'}}>
+                <MenuItem value={item.id} style={{ display: 'block' }}>
                   {item.descricao}
                 </MenuItem>
               ))}
@@ -202,12 +215,12 @@ function CadastroPostagem() {
             <Button
               type='submit'
               variant='contained'
-              style={{ backgroundColor: "#d8d8d8", color: "white", fontWeight:'bold'}}
-              >
-                Postar
+              style={{ backgroundColor: "#d8d8d8", color: "white", fontWeight: 'bold' }}
+            >
+              Postar
             </Button>
           </FormControl>
-            
+
         </form>
       </Container>
     </>
