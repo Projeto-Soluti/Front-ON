@@ -33,6 +33,9 @@ Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o gru
 
 ## Assim nasce a SolutiON 🚀
 
+## Link do projeto no Netlify
+https://soluti.netlify.app/
+
 ### TECNOLOGIAS
 
 <a href="#">
@@ -70,7 +73,7 @@ Flex box - elementos organizados dentro de containers.
 
 ## Implementações:
 <ul>
-	<li>C	omponentização react;</li>
+	<li>Componentização;</li>
 </ul>
 <ul>
 	<li>router DOM;</li>
@@ -103,6 +106,9 @@ Flex box - elementos organizados dentro de containers.
 </ul>
 <ul>
 	<li>Responsividade;</li>
+</ul>
+<ul>
+	<li>Dark mode;</li>
 </ul>
 <ul>
 	<li>Noções de UX/UI;</li>
