@@ -30,8 +30,8 @@ Escopo nacional.
 ## Impacto 
 Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o grupo enxergou a possibilidade de atuar em uma área na qual há uma problemática sem uma específica solução. Logo, a ampliação dessa rede promoverá um maior fortalecimento do comércio nacional, pautado na funcionalidade prática.
 <br>
-Assim nasce a <h3>SolutiON</h3>
 
+<h3>Assim nasce a SolutiON</h3>
 
 ### TECNOLOGIAS
 
