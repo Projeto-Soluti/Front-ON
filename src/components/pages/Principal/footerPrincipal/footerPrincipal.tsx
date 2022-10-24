@@ -1,4 +1,6 @@
 import './footerPrincipal.css'
+import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa"
+
 
 function footerPrincipal() {
     return (
@@ -56,17 +58,17 @@ function footerPrincipal() {
                                 <span className= "sobrenos">Sobre nós</span>
                                 A <strong >SolutiON</strong> é uma rede estratégica para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030.
                             </p>
-                            <div className="footerIcons">
+                            <div >
                                 <a href="https://www.github.com/projeto-soluti" target="_blank">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" />
+                                    <FaGithubSquare className='iconfooter' />
                                 </a>
 
                                 <a href="#" target="_blank">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="facebook" />
+                                    <FaFacebookSquare className='iconfooter' />
                                 </a>
 
                                 <a href="#" target="_blank">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="linkedin" />
+                                    <FaLinkedin className='iconfooter'/>
                                 </a>
                             </div>
                         </div>

@@ -11,6 +11,8 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
 import Parceiros from './Parceiros/Parceiros'
+import { FaRocket, FaLightbulb, FaBrain } from 'react-icons/fa';
+
 
 
 function Principal() {
@@ -89,29 +91,28 @@ function Principal() {
                             <div className='cards'>
                                 <div className='card'> 
                                     <div className='sbox'>
-                                        {/* <i class='fas fa-line-chart'></i> */}
+                                        <FaRocket className='iconlogo' />
                                         <h4>Missão</h4>
-                                        <p>Promover uma maior integração das pequenas empresas por meio de um canal de comunicação, de modo a construir um espaço resiliente e fortalecer a inovação inclusiva à nivel nacional.</p>
+                                        <p>Promover uma maior integração das pequenas empresas por meio de um canal de comunicação, 
+                                            de modo a construir um espaço resiliente e fortalecer a inovação inclusiva à nivel nacional.</p>
                                     </div>
                                 </div>
 
                                 <div className='card'> 
                                     <div className='sbox'>
-                                        {/* <i class='fas fa-line-chart'></i> */}
+                                        < FaBrain className='iconlogo' />
                                         <h4>Valores</h4>
-                                        <p>O que aconteceu com aquele sentimento
-                                            Cadê aquele brilho do teu olhar (do teu olhar)
-                                            Não deixe que o tempo apague a nossa história
-                                            Porque ainda é tempo pra recomeçar</p>
+                                        <p>Nossa cultura é alicerçada continuamente sobre os pilares da colaboração, resiliência e inclusão, garantindo integridade e legitimidade a todos os públicos da nossa rede.
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div className='card'> 
                                     <div className='sbox'>
-                                        {/* <i class='fas fa-line-chart'></i> */}
+                                        <FaLightbulb className='iconlogo' />
                                         <h4>Mindset</h4>
-                                        <p>Nossa força-motriz é a inovação, por isso incentivamos a autonomia de nossos usuários e colaboradores.
-                                            Além disso, fomentamos o acesso a serviços financeiros para obtenção de crédito com o objetivo de impulsionar o seu negócio.</p>
+                                        <p>Inovação perpassa todos os nossos setores colaborativos.
+                                            Além disso, fomentamos o acesso a serviços financeiros para obtenção de crédito a fim de impulsionar pequenos negócios.</p>
                                     </div>
                                 </div>
                             </div>

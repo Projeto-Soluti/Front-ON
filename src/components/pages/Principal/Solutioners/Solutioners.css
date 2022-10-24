@@ -15,10 +15,17 @@
     background-color: #141b4e;
 }
 
+.App h2 span {
+    background-image: linear-gradient(45deg, #15417b, #1197a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .App h1 {
     font-size: 2.2rem;
     padding-bottom: 10px;
 }
+
 
 .tituloSolu{
     text-align: center;
