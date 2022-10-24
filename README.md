@@ -24,7 +24,35 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
 
 ## Versão: React 17
 
-##
+## Comandos para a execução do projeto:
+
+****`npx create-react-app nome-do-projeto --template typescript`**** (criar um projeto react typescript) <br>
+****`cd nome-do-projeto`**** (entrar na pasta do arquivo) <br>
+****`yarn`**** (baixar as dependências instaladas) <br>
+****`yarn start`**** (executa os scripts) <br>
+
+Obs: é preciso ter o NodeJS instalado previamente. <br>
+A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
+
+## Estilização com Material-UI
+
+Combinação dos dois p/ compor a página web
+
+CSS GRID -estilizar o layout de uma página, considerando linhas e colunas;
+Flex box - elementos organizados dentro de containers.
+
+
+## Implementações:
+
+-componentização react; <br>
+-rotas; <br>
+-redux; <br>
+-axios; <br>
+-CRUD; <br>
+-mui/material; <br>
+-toastify personalizado; <br>
+-consumo de API por meio da documentação do Swagger; <br>
+
 ### Status
 
 **:construction: Projeto em construção :construction:**
