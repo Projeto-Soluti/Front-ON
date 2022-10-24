@@ -43,9 +43,15 @@ Flex box - elementos organizados dentro de containers.
 
 
 ## Implementações:
+<ul>
+	<li>componentização react;</li>
+</ul>
+<ul>
+	<li>router DOM;</li>
+</ul>
 
 -componentização react; <br>
--rotas; <br>
+-router DOM; <br>
 -redux; <br>
 -axios; <br>
 -CRUD; <br>
