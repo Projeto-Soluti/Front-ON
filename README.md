@@ -31,7 +31,7 @@ Escopo nacional.
 Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o grupo enxergou a possibilidade de atuar em uma área na qual há uma problemática sem uma específica solução. Logo, a ampliação dessa rede promoverá um maior fortalecimento do comércio nacional, pautado na funcionalidade prática.
 <br>
 
-### Assim nasce a SolutiON 🚀
+## Assim nasce a SolutiON 🚀
 
 ### TECNOLOGIAS
 
@@ -60,9 +60,9 @@ Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o gru
 Obs: é preciso ter o NodeJS instalado previamente. <br>
 A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
 
-## Estilização com Material-UI
+## Estilização com Material-UI e HTML5 e CSS3 puros
 
-Combinação dos dois p/ compor a página web
+Combinação dos dois p/ compor as interfaces na web.
 
 CSS GRID -estilizar o layout de uma página, considerando linhas e colunas; <br>
 Flex box - elementos organizados dentro de containers.
@@ -82,6 +82,9 @@ Flex box - elementos organizados dentro de containers.
 	<li>axios;</li>
 </ul>
 <ul>
+	<li>react icons;</li>
+</ul>
+<ul>
 	<li>CRUD;</li>
 </ul>
 <ul>
@@ -94,7 +97,22 @@ Flex box - elementos organizados dentro de containers.
 	<li>consumo de API por meio da documentação do Swagger;</li>
 </ul>
 
-
+## Implementações futuras:
+<ul>
+	<li>Acessibilidade;</li>
+</ul>
+<ul>
+	<li>Responsividade;</li>
+</ul>
+<ul>
+	<li>Noções de UX/UI;</li>
+</ul>
+<ul>
+	<li>Tela para recuperação de senha;</li>
+</ul>
+<ul>
+	<li>Geolocalização;</li>
+</ul>
 
 ### Status
 
