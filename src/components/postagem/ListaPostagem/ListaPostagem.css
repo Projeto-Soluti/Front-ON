@@ -1,14 +1,7 @@
+.feed {
+  display: block;
+}
+
 .text-decorator-none{
   text-decoration: none;
-  
-}
-
-.textoPostagem {
-  color: black !important;
-}
-
-.botaoPost {
-  color: white;
-  display: flex;
-  justify-content: space-around;
 }

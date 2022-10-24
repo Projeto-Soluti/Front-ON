@@ -3,10 +3,31 @@
 }
 
 .btnModal {
-    border-color: black !important;
-    background-color: none !important;
+    color: white;
 }
 
 .radius {
     border-radius: 10%;
+}
+
+.novoPost {
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    font-size: 15px;
+}
+
+.novoPost:hover {
+    color: #0044fd !important;
+    box-shadow: 0 0 45px #0044fd;
+}
+
+.novoPost span {
+    position: relative;
+}
+
+.novoPost i {
+    position: absolute;
+    inset: 0;
+    display: block;
 }

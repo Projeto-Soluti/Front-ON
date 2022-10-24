@@ -1,23 +1,34 @@
-.logo {
-    border-radius: 50%;
-    padding: 0.5vw;
+.backgroundHome {
+    background-color: #eef1ff;
 }
 
-.caixa {
-    background-color: #e3a731;
+.spaceBetween {
+    display: flex;
+    justify-content: center;
+}
+
+.glass1 {
+    background: rgba(157, 184, 209, 0);
+    box-shadow: 0 8px 32px 0 rgba(159, 173, 219, 0.37);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 50px;
 }
 
 .titulo {
     color: white !important;
     font-weight: bold !important;
+    font-size: 25px !important;
 }
 
-.botao {
-    border-color: #000000 !important;
-    background-color: #140e19;
+.subtitulo {
     color: white !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
 }
 
-.postagens {
-    background-color: white;
+.text-decorator-none {
+text-decoration: none;
 }
