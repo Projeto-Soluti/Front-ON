@@ -25,8 +25,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
 import { MenuItem, Menu } from "@material-ui/core";
-import ModalDeletarPostagem from "../deletarPostagem/ModalDeletarPostagem";
-import ModalAtualizarPostagem from "../cadastroPostagem/ModalAtualizarPostagem";
+import DeletarPostagem from "../deletarPostagem/DeletarPostagem";
+import CadastroPostagem from "../cadastroPostagem/CadastroPostagem";
 
 function ListaPostagem() {
   let navigate = useNavigate();
@@ -129,30 +129,6 @@ function ListaPostagem() {
                   </Typography>
                 </>
               }
-              action={
-                <div>
-                  <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                    <MoreVertIcon />
-                  </Button>
-                  <Menu
-                    id="simple-menu"
-                    anchorEl={anchorEl}
-                    keepMounted
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}>
-                    <Link to={`/editarPost/${postagem.id}`} className='text-decorator-none'>
-                      <MenuItem onClick={handleMenuClose} style={{ cursor: "pointer", color: "black" }}>
-                        <ModalAtualizarPostagem />
-                      </MenuItem>
-                    </Link>
-                    <Link to={`/apagarPost/${postagem.id}`} className='text-decorator-none'>
-                      <MenuItem onClick={handleMenuClose} style={{ cursor: "pointer", color: "black" }}>
-                        <ModalDeletarPostagem />
-                      </MenuItem>
-                    </Link>
-                  </Menu>
-                </div>
-              }
               title={postagem.titulo}
               subheader={postagem.data}
             />
@@ -176,6 +152,22 @@ function ListaPostagem() {
               <IconButton aria-label="share">
                 <ShareIcon />
               </IconButton>
+              <Box display="flex" justifyContent="center" mb={1.5}>
+                <Link to={`/editarPost/${postagem.id}`} className='text-decorator-none'>
+                  <Box mx={1}>
+                    <Button variant="contained" className="marginLeft" size='small' style={{ backgroundColor: "#06283d", color: "white" }} >
+                      atualizar
+                    </Button>
+                  </Box>
+                </Link>
+                <Link to={`/apagarPost/${postagem.id}`} className='text-decorator-none'>
+                  <Box mx={1}>
+                    <Button variant="contained" size='small' style={{backgroundColor: '#c21010', color: 'white'}}>
+                      deletar
+                    </Button>
+                  </Box>
+                </Link>
+              </Box>
             </CardActions>
           </Card>
         </Box>

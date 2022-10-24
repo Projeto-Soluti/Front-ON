@@ -5,9 +5,3 @@
 .text-decorator-none{
   text-decoration: none;
 }
-
-.botaoPost {
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
