@@ -7,11 +7,22 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
 
 ##
 
-### TECNOLOGIA
+### TECNOLOGIAS
 
-<div style="display: inline_block">
-<img align="center" alt="" height="80" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg">
-</div>
+<a href="#">
+		<img src="https://img.shields.io/static/v1?label=Biblioteca&message=React&color=green&style=for-the-badge&logo=Ghost"  alt="Language: React">
+	</a>
+	<a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
+    </a>
+    <a href="#">
+		<img src="https://img.shields.io/static/v1?label=Biblioteca&message=Material-UI&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Material-UI">
+	</a>
+  <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=Figma&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Figma">
+	</a>
+
+## Versão: React 17
 
 ##
 ### Status
