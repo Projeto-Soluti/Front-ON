@@ -15,12 +15,6 @@ Construir infraestruturas resilientes, promover a industrialização inclusiva e
 
 O grupo optou por escolher a ODS 9 a fim de aumentar o acesso das pequenas indústrias e outras empresas em desenvolvimento aos serviços financeiros, incluindo crédito acessível e sua integração em cadeias de valor e mercado. Com isso, pensamos na criação de uma rede social que solucionasse o gerenciamento de dados e a captação de empresas de pequeno porte. 
 
-<!-- ## Problemática
-Falta de acesso à uma rede de comunicação ágil por parte das pequenas empresas para sustentarem seus respectivos negócios.
-
-## Solução
-Promover uma maior integração das pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e fortalecer a inovação inclusiva, em conformidade com os preceitos da ODS 9.  -->
-
 ## Público alvo
 Microempresas.
 
@@ -32,8 +26,7 @@ Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o gru
 <br>
 
 ## Assim nasce a SolutiON 🚀
-
-## Link do projeto no Netlify
+Link do projeto no Netlify
 https://soluti.netlify.app/
 
 ### TECNOLOGIAS
