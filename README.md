@@ -79,7 +79,7 @@ Flex box - elementos organizados dentro de containers.
 	<li>Router DOM;</li>
 </ul>
 <ul>
-	<li>useState, useEffect e ChangeEvent;</li>
+	<li>Hooks;</li>
 </ul>
 <ul>
 	<li>Redux;</li>
