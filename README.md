@@ -76,29 +76,37 @@ Flex box - elementos organizados dentro de containers.
 	<li>Componentização;</li>
 </ul>
 <ul>
-	<li>router DOM;</li>
+	<li>Router DOM;</li>
 </ul>
 <ul>
-	<li>redux;</li>
+	<li>useState, useEffect e ChangeEvent;</li>
 </ul>
 <ul>
-	<li>axios;</li>
+	<li>Redux;</li>
 </ul>
 <ul>
-	<li>react icons;</li>
+	<li>Axios;</li>
+</ul>
+<ul>
+	<li>Icons;</li>
 </ul>
 <ul>
 	<li>CRUD;</li>
 </ul>
 <ul>
-	<li>mui/material;;</li>
+	<li>Mui/material;;</li>
 </ul>
 <ul>
-	<li>toastify personalizado;</li>
+	<li>Toastify personalizado;</li>
 </ul>
 <ul>
-	<li>consumo de API por meio da documentação do Swagger;</li>
+	<li>Consumo de API por meio da documentação do Swagger;</li>
 </ul>
+<ul>
+	<li>Alice carousel;</li>
+</ul>
+
+
 
 ## Implementações futuras:
 <ul>
