@@ -26,7 +26,7 @@ Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o gru
 <br>
 
 ## Assim nasce a SolutiON 🚀
-Link do projeto no Netlify
+Link do projeto no ar:
 https://soluti.netlify.app/
 
 ### TECNOLOGIAS
