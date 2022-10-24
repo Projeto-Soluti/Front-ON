@@ -162,8 +162,11 @@ i.email,i.telefone, i.local{
     margin-bottom: 20px;
 }
 
-.footerIcons {
-    margin-top: 25px;
+.iconfooter { 
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: #92999f;
+    paddding: 1rem;
 }
 
  .footerIcons a {
