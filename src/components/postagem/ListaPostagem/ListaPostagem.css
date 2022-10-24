@@ -1,10 +1,9 @@
-.text-decorator-none{
-  text-decoration: none;
-  
+.feed {
+  display: block;
 }
 
-.textoPostagem {
-  color: black !important;
+.text-decorator-none{
+  text-decoration: none;
 }
 
 .botaoPost {

@@ -1,0 +1,35 @@
+.atualizar {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 15px;
+    background: #333;
+    border: none;
+    color: black;
+}
+
+.atualizar:hover {
+    background: #16213E;
+    color: #0044fd !important;
+    box-shadow: 0 0 45px #0044fd;
+}
+
+.atualizar::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: white;
+}
+
+.atualizar span {
+    position: relative;
+    z-index: 1;
+}
+
+.atualizar i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}

@@ -103,7 +103,7 @@ function DeletarPostagem() {
                   variant="contained"
                   className="marginLeft"
                   size="large"
-                  style={{ backgroundColor: "#C21010", color: "white", fontWeight: 'bold' }}
+                  style={{backgroundColor: '#c21010', color: 'white'}}
                 >
                   Sim
                 </Button>
@@ -113,7 +113,7 @@ function DeletarPostagem() {
                   onClick={nao}
                   variant="contained"
                   size="large"
-                  style={{ backgroundColor: "#d8d8d8", color: "white", fontWeight: 'bold' }}
+                  style={{ backgroundColor: "#06283d", color: "white" }}
                 >
                   Não
                 </Button>
