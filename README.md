@@ -39,29 +39,36 @@ https://soluti.netlify.app/
 ### TECNOLOGIAS
 
 <a href="#">
-		<img src="https://img.shields.io/static/v1?label=Biblioteca&message=React&color=green&style=for-the-badge&logo=Ghost"  alt="Language: React">
+	<img src="https://img.shields.io/static/v1?label=Biblioteca&message=React&color=green&style=for-the-badge&logo=Ghost"  alt="Language: React">
 	</a>
-	<a href="#">
-        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
-    </a>
-    <a href="#">
-		<img src="https://img.shields.io/static/v1?label=Framework&message=Material-UI&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Material-UI">
-	</a>
-  <a href="#">
-		<img src="https://img.shields.io/static/v1?label=&message=Figma&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Figma">
-	</a>
+![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![FIGMA](https://img.shields.io/badge/Figma-ED8B00?style=for-the-badge&logo=figma&logoColor=white)
+
 
 ## Versão: React 17
 
 ## Comandos para a execução do projeto:
 
-****`npx create-react-app nome-do-projeto --template typescript`**** (criar um projeto react typescript) <br>
 ****`cd nome-do-projeto`**** (entrar na pasta do arquivo) <br>
+****`code .`**** (abrir o editor de textos Visual Studio Code) <br>
 ****`yarn`**** (baixar as dependências instaladas) <br>
 ****`yarn start`**** (executa os scripts) <br>
 
 Obs: é preciso ter o NodeJS instalado previamente. <br>
 A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
+
+## Pontos de atenção
+Conforme configurado no back-end, a regra de negócio do campo CNPJ deve, obrigatoriamente, ser preenchido com 14 caracteres, seguindo a padronização do número identificador. Caso o usuário não siga esta disposição não conseguirá dar andamento ao cadastro. Assim procede com o campo de senha, que deverá possuir 8 caracteres.
+
+![Captura de tela de 2022-10-24 18-39-32](https://user-images.githubusercontent.com/105956403/197636573-98857752-bbb8-4aa1-8e87-59708571af25.png)
+
+
+Caso o cadastro seja bem sucedido, o usuário será redirecionado para a página de login, conforme abaixo:
+
+![Captura de tela de 2022-10-24 18-40-01](https://user-images.githubusercontent.com/105956403/197636594-edd287f0-6bb2-4e25-8e92-150737cbdecf.png)
+
 
 ## Estilização com Material-UI e HTML5 e CSS3 puros
 
