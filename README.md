@@ -40,11 +40,10 @@ https://soluti.netlify.app/
 
 <a href="#">
 	<img src="https://img.shields.io/static/v1?label=Biblioteca&message=React&color=green&style=for-the-badge&logo=Ghost"  alt="Language: React">
-	</a>
+</a>
+	
 ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![FIGMA](https://img.shields.io/badge/Figma-ED8B00?style=for-the-badge&logo=figma&logoColor=white)
+
 
 
 ## Versão: React 17
@@ -54,12 +53,12 @@ https://soluti.netlify.app/
 ****`cd nome-do-projeto`**** (entrar na pasta do arquivo) <br>
 ****`code .`**** (abrir o editor de textos Visual Studio Code) <br>
 ****`yarn`**** (baixar as dependências instaladas) <br>
-****`yarn start`**** (executa os scripts) <br>
+****`yarn start`**** (executar os scripts) <br>
 
-Obs: é preciso ter o NodeJS instalado previamente. <br>
+Obs: é preciso ter o NodeJS instalado previamente, buscando manter a versão mais atualizada do software. <br>
 A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
 
-## Pontos de atenção
+## Pontos de atenção:
 Conforme configurado no back-end, a regra de negócio do campo CNPJ deve, obrigatoriamente, ser preenchido com 14 caracteres, seguindo a padronização do número identificador. Caso o usuário não siga esta disposição não conseguirá dar andamento ao cadastro. Assim procede com o campo de senha, que deverá possuir 8 caracteres.
 
 ![Captura de tela de 2022-10-24 18-39-32](https://user-images.githubusercontent.com/105956403/197636573-98857752-bbb8-4aa1-8e87-59708571af25.png)
