@@ -1,12 +1,14 @@
 # SolutiON - Entregando soluções e transformando negócios.
 
-Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da [Generation Brasil](https://brazil.generation.org/ ), cujo propósito centra-se na promoção de uma rede estratégica e ágil para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030. 
+Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da [Generation Brasil](https://brazil.generation.org/ ), cujo propósito centra-se na promoção de uma rede estratégica e ágil para microempresas, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030. 
 <br>
+
+## Objetivo
 
 Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9. 
 
 ## Motivação
-Dado o cenário de que a ocorrência da pandemia interviu diretamente na comunicação das pequenas empresas, pensamos na proposição de uma rede social que solucionasse exatamente essa problemática da falta de acesso à uma rede maior que verdadeiramente levasse em consideração a necessidade de uma comunicação ágil. 
+A ausência de uma diversificação comercial por conta das normatizações legais acaba por não propiciar um ambiente de mercado adequado para o desenvolvimento desses pequenos negócios, podendo levá-los à falência, cenário este que ocorreu durante os primeiros anos da pandemia. Logo, a promoção de uma rede de comunicação com ênfase nas microempresas possibilitaria que o capital comercial continuasse circulando à nível nacional.
 
 ## ODS 9 - INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA
 Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.
@@ -21,6 +23,14 @@ Promover uma maior integração das pequenas empresas por meio de uma plataforma
 
 ## Público alvo
 Microempresas.
+
+## Região
+Escopo nacional.
+
+## Impacto 
+Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o grupo enxergou a possibilidade de atuar em uma área na qual há uma problemática sem uma específica solução. Logo, a ampliação dessa rede promoverá um maior fortalecimento do comércio nacional, pautado na funcionalidade prática.
+<br>
+Assim nasce a <h3>SolutiON</h3>
 
 
 ### TECNOLOGIAS
