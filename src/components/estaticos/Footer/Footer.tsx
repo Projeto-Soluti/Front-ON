@@ -1,11 +1,10 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core"
 import { Box } from '@mui/material'
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css';
 import { useSelector } from "react-redux";
-import { TokenState } from "../../../store/token/TokenReducer";
+import { TokenState } from "../../../store/token/TokenReducer"
+import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa"
+
 
 function Footer() {
     const token = useSelector<TokenState, TokenState["token"]>(
@@ -22,7 +21,7 @@ function Footer() {
                     <div className="itensFooter">
                         <div>
                             <div className="footerLeft">
-                                <h3 className="soluti" >SOLUTI <span className="on" > ON </span> </h3>
+                                <h3 className="soluti">SOLUTI<span className="on">ON </span></h3>
 
                                 <div  >
                                     <ul className="footerLinks">
@@ -44,7 +43,7 @@ function Footer() {
                                     </ul>
                                 </div>
 
-                                <p className="footerCompanyName">Copyright © 2022 <strong>Soluti ON</strong> All rights reserved</p>
+                                <p className="footerCompanyName">Copyright © 2022 <strong>SolutiON</strong> All rights reserved</p>
                             </div>
                         </div>
                         <div>
@@ -70,17 +69,17 @@ function Footer() {
                                     <span className="sobrenos">Sobre nós</span>
                                     A <strong >SOLUTION</strong> é uma rede estratégica e ágil para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030.
                                 </p>
-                                <div className="footerIcons">
+                                <div >
                                     <a href="https://www.github.com/projeto-soluti" target="_blank">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" />
+                                        <FaGithubSquare className='iconfooter' />
                                     </a>
 
                                     <a href="#" target="_blank">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="facebook" />
+                                        <FaFacebookSquare className='iconfooter' />
                                     </a>
 
                                     <a href="#" target="_blank">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="linkedin" />
+                                        <FaLinkedin className='iconfooter' />
                                     </a>
                                 </div>
                             </div>

@@ -197,4 +197,9 @@ i.email,i.telefone, i.local{
     }
 }       
 
-
+.iconfooter { 
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: #92999f;
+    margin-left: 5px;
+}
