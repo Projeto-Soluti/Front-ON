@@ -36,21 +36,17 @@ https://soluti.netlify.app/
 ### Tela de login
 ![teladelogin](https://user-images.githubusercontent.com/105956403/197602017-72fdca49-0877-4561-97c7-0cb72794b7cd.png)
 
-### TECNOLOGIAS
+### Hard Skills
 
-<a href="#">
-	<img src="https://img.shields.io/static/v1?label=Biblioteca&message=React&color=green&style=for-the-badge&logo=Ghost"  alt="Language: React">
-</a>
-	
+![REACT](https://img.shields.io/badge/React-6DB33F?style=for-the-badge&logo=react&logoColor=white)	
 ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
 ![FIGMA](https://img.shields.io/badge/Figma-ED8B00?style=for-the-badge&logo=figma&logoColor=white)
+![MATERIAL-UI](https://img.shields.io/badge/Material-UI-007ACC?style=for-the-badge&logo=material-ui&logoColor=white)
+![NODE](https://img.shields.io/badge/Node-6DB33F?style=for-the-badge&logo=node&logoColor=white)
 
-## Versão: React 17
+### Versão: React 17
 
 ## Comandos para a execução do projeto:
 
