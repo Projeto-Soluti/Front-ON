@@ -16,7 +16,7 @@ Nossa proposta é promover uma maior integração entre as pequenas empresas por
         <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
     </a>
     <a href="#">
-		<img src="https://img.shields.io/static/v1?label=Biblioteca&message=Material-UI&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Material-UI">
+		<img src="https://img.shields.io/static/v1?label=Framework&message=Material-UI&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Material-UI">
 	</a>
   <a href="#">
 		<img src="https://img.shields.io/static/v1?label=&message=Figma&color=green&style=for-the-badge&logo=Ghost"  alt="Framework: Figma">
