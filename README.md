@@ -3,9 +3,25 @@
 Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da [Generation Brasil](https://brazil.generation.org/ ), cujo propósito centra-se na promoção de uma rede estratégica e ágil para pequenos negócios, visando fortalecer o comércio nacional no rol do mercado financeiro até 2030. 
 <br>
 
-Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9.
+Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9. 
 
-##
+## Motivação
+Dado o cenário de que a ocorrência da pandemia interviu diretamente na comunicação das pequenas empresas, pensamos na proposição de uma rede social que solucionasse exatamente essa problemática da falta de acesso à uma rede maior que verdadeiramente levasse em consideração a necessidade de uma comunicação ágil. 
+
+## ODS 9 - INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA
+Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.
+
+O grupo optou por escolher a ODS 9 a fim de aumentar o acesso das pequenas indústrias e outras empresas em desenvolvimento aos serviços financeiros, incluindo crédito acessível e sua integração em cadeias de valor e mercado. Com isso, pensamos na criação de uma rede social que solucionasse o gerenciamento de dados e a captação de empresas de pequeno porte. 
+
+<!-- ## Problemática
+Falta de acesso à uma rede de comunicação ágil por parte das pequenas empresas para sustentarem seus respectivos negócios.
+
+## Solução
+Promover uma maior integração das pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e fortalecer a inovação inclusiva, em conformidade com os preceitos da ODS 9.  -->
+
+## Público alvo
+Microempresas.
+
 
 ### TECNOLOGIAS
 
@@ -44,20 +60,31 @@ Flex box - elementos organizados dentro de containers.
 
 ## Implementações:
 <ul>
-	<li>componentização react;</li>
+	<li>C	omponentização react;</li>
 </ul>
 <ul>
 	<li>router DOM;</li>
 </ul>
+<ul>
+	<li>redux;</li>
+</ul>
+<ul>
+	<li>axios;</li>
+</ul>
+<ul>
+	<li>CRUD;</li>
+</ul>
+<ul>
+	<li>mui/material;;</li>
+</ul>
+<ul>
+	<li>toastify personalizado;</li>
+</ul>
+<ul>
+	<li>consumo de API por meio da documentação do Swagger;</li>
+</ul>
 
--componentização react; <br>
--router DOM; <br>
--redux; <br>
--axios; <br>
--CRUD; <br>
--mui/material; <br>
--toastify personalizado; <br>
--consumo de API por meio da documentação do Swagger; <br>
+
 
 ### Status
 
