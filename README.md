@@ -38,7 +38,7 @@ A outra opção de execução senão yarn é o ****`npm install`**** seguido do 
 
 Combinação dos dois p/ compor a página web
 
-CSS GRID -estilizar o layout de uma página, considerando linhas e colunas;
+CSS GRID -estilizar o layout de uma página, considerando linhas e colunas; <br>
 Flex box - elementos organizados dentro de containers.
 
 
