@@ -11,15 +11,23 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import Solutioners from './Solutioners/Solutioners'
 import { Link } from 'react-router-dom'
 import Parceiros from './Parceiros/Parceiros'
-import { FaRocket, FaLightbulb, FaBrain } from 'react-icons/fa';
+import { FaRocket, FaLightbulb, FaBrain } from 'react-icons/fa'
+import { MdOutlineDarkMode } from 'react-icons/md'
+import * as ReactDOM from 'react-dom'
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 
 
-function Principal() {
+const Principal = () => {
+
+    const [isDarkMode, setDarkMode] = React.useState(false)
+
+    const toggleDarkMode = (checked: boolean) => {
+        setDarkMode(checked);
+    }
     
     return (
         <>
-            {/* cabeçalho*/}
             <header className="header-menu">
                 <div className='title'>
                     <h1>Soluti<span className='title2'>ON</span></h1>
@@ -46,9 +54,17 @@ function Principal() {
                                 <a href="#login" className='login'>Login</a>
                             </li>
                         </Link>
+
                     </ul>
-                    
                 </Grid>
+
+                    <DarkModeSwitch
+                        className='effect'
+                        checked={isDarkMode}
+                        onChange={toggleDarkMode}
+                        size={50}
+                    />
+
             </header>
 
             {/* página principal  */}
@@ -170,10 +186,6 @@ function Principal() {
                 <div>
                     <Footer />
                 </div>
-
-
-
-
 
 
         </>
