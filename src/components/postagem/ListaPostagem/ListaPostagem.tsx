@@ -4,6 +4,7 @@ import {
   Card,
   CardActions,
   CardContent,
+  Grid,
   Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
@@ -27,6 +28,7 @@ import { red } from '@material-ui/core/colors';
 import { MenuItem, Menu } from "@material-ui/core";
 import DeletarPostagem from "../deletarPostagem/DeletarPostagem";
 import CadastroPostagem from "../cadastroPostagem/CadastroPostagem";
+import ModalAtualizarPostagem from "../cadastroPostagem/ModalAtualizarPostagem";
 
 function ListaPostagem() {
   let navigate = useNavigate();
@@ -70,7 +72,8 @@ function ListaPostagem() {
   const useStyles = makeStyles((theme: Theme) =>
     createStyles({
       root: {
-        maxWidth: 345,
+        maxWidth: 750,
+        minWidth: 750,
       },
       media: {
         height: 0,
@@ -117,7 +120,7 @@ function ListaPostagem() {
   return (
     <>
       {postagens.map((postagem) => (
-        <Box m={2} key={postagem.id} className='feed'>
+        <Grid m={2} xs={6} key={postagem.id} className='feed' justifyContent='center' alignItems='center'>
           <Card className={classes.root}>
             <CardHeader
               avatar={
@@ -134,8 +137,8 @@ function ListaPostagem() {
             />
             <CardMedia
               className={classes.media}
-              image="https://classic.exame.com/wp-content/uploads/2019/01/dji_0331a-e1548360008295.jpg?quality=70&strip=info&w=1024"
-              title="Parque Empresarial"
+              image={postagem.foto}
+              title={postagem.titulo}
             />
             <CardContent>
               <Typography variant="h6" color="textPrimary" component="p" textAlign='center'>
@@ -156,21 +159,21 @@ function ListaPostagem() {
                 <Link to={`/editarPost/${postagem.id}`} className='text-decorator-none'>
                   <Box mx={1}>
                     <Button variant="contained" className="marginLeft" size='small' style={{ backgroundColor: "#06283d", color: "white" }} >
-                      atualizar
+                      Atualizar
                     </Button>
                   </Box>
                 </Link>
                 <Link to={`/apagarPost/${postagem.id}`} className='text-decorator-none'>
                   <Box mx={1}>
                     <Button variant="contained" size='small' style={{backgroundColor: '#c21010', color: 'white'}}>
-                      deletar
+                      Deletar
                     </Button>
                   </Box>
                 </Link>
               </Box>
             </CardActions>
           </Card>
-        </Box>
+        </Grid>
       ))}
     </>
   );
