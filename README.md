@@ -4,7 +4,6 @@ Front-end do Projeto Integrador desenvolvido no terceiro módulo do bootcamp da 
 <br>
 
 ## Objetivo
-
 Nossa proposta é promover uma maior integração entre as pequenas empresas por meio de uma plataforma de rede social, de modo a construir infraestruturas resilientes e consolidar a inovação inclusiva em conformidade com os preceitos da ODS 9. 
 
 ## Motivação
@@ -28,6 +27,9 @@ Por se tratar de uma estratégia de negócio atrelado ao valor de mercado, o gru
 ## Assim nasce a SolutiON 🚀
 Link do projeto no ar:
 https://soluti.netlify.app/
+
+<br>
+
 ![telaprincipal](https://user-images.githubusercontent.com/105956403/197601785-1e549903-6b62-4049-bb73-45b93fd53400.png)
 
 ### Tela de cadastro
@@ -39,12 +41,6 @@ https://soluti.netlify.app/
 ### Hard Skills
 
 ![REACT](https://img.shields.io/badge/React-6DB33F?style=for-the-badge&logo=react&logoColor=white)
-
-[<img src="https://img.shields.io/badge/git-282C34?logo=git&logoColor=F05032" alt="git logo" title="git" height="25" />]
-[<img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" alt="TypeScript logo" title="TypeScript" height="25" />]
-[<img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="25" />]
-[<img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" />]
-
 ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -61,7 +57,7 @@ https://soluti.netlify.app/
 ****`yarn`**** (baixar as dependências instaladas) <br>
 ****`yarn start`**** (executar os scripts) <br>
 
-Obs: é preciso ter o NodeJS instalado previamente, buscando manter a versão mais atualizada do software. <br>
+Obs: é preciso ter o Node instalado previamente, buscando manter a versão mais atualizada do software. <br>
 A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
 
 ## Pontos de atenção:
