@@ -3,7 +3,6 @@
     margin-top: 80px;
 }
 
-
 .App h2:after {
     content: '';
     position: absolute;
@@ -25,7 +24,6 @@
     font-size: 2.2rem;
     padding-bottom: 10px;
 }
-
 
 .tituloSolu{
     text-align: center;
@@ -67,6 +65,7 @@ article img {
     margin: 10px;
 }
 
+
 .item img{
     width: 250px;
     height: 250px;
@@ -87,7 +86,6 @@ h2 {
 
 
 .cardsolu {
-    width: calc(34% - 22px);
     padding: 40px 12px;
     margin: 0 30px;
     text-align: center;

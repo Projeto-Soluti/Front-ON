@@ -25,11 +25,11 @@ function Solutioners() {
   
 
   //fotos do carrossel 
-  const items = [
+  const items = [  
     <div className="cardsolu">
-      <div className='item'>
-        <img src={van} alt="Van"></img>    
-        </div>
+    <div className='item'>
+        <img src={van} width="250" height="250" alt="Van"></img>   
+        </div> 
           <h1 className='nominho'>Vanessa Isabella</h1>
           <span className='funcaozinha'>Desenvolvedora Full Stack Java Jr.</span>
           <div className='loguinho'>
