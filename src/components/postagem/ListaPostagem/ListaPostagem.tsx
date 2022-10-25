@@ -72,8 +72,8 @@ function ListaPostagem() {
   const useStyles = makeStyles((theme: Theme) =>
     createStyles({
       root: {
-        maxWidth: 750,
-        minWidth: 750,
+        maxWidth: 500,
+        minWidth: 500,
       },
       media: {
         height: 0,
@@ -123,6 +123,7 @@ function ListaPostagem() {
         <Grid m={2} xs={6} key={postagem.id} className='feed' justifyContent='center' alignItems='center'>
           <Card className={classes.root}>
             <CardHeader
+            className="backgroundCardLista"
               avatar={
                 <>
                   <Avatar aria-label="recipe" className={classes.avatar}>
@@ -158,16 +159,22 @@ function ListaPostagem() {
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link to={`/editarPost/${postagem.id}`} className='text-decorator-none'>
                   <Box mx={1}>
-                    <Button variant="contained" className="marginLeft" size='small' style={{ backgroundColor: "#06283d", color: "white" }} >
-                      Atualizar
-                    </Button>
+                    <button className="atualizarButton cursor">
+                      <span className="hover-underline-animation"> Atualizar </span>
+                      <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                      </svg>
+                    </button>
                   </Box>
                 </Link>
                 <Link to={`/apagarPost/${postagem.id}`} className='text-decorator-none'>
                   <Box mx={1}>
-                    <Button variant="contained" size='small' style={{backgroundColor: '#c21010', color: 'white'}}>
-                      Deletar
-                    </Button>
+                  <button className="deletarButton cursor">
+                      <span className="hover-underline-animation"> Deletar </span>
+                      <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                      </svg>
+                    </button>
                   </Box>
                 </Link>
               </Box>

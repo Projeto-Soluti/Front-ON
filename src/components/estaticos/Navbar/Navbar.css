@@ -19,34 +19,136 @@
     text-decoration: none !important;
 }
 
-/* .tituloprincipal {
-    display: flex;
-    margin-right: 2vh;
-} */
+/*--------------------------------------------------------------------------------*/
 
-.menu {
-    display: flex !important;
-    justify-content: center !important;
-    right: 1vh;
-    gap:.0rem;
-    text-decoration: none !important;
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logout {
+.header-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 15px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+}
+
+.header-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-home {
+    display: flex !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 28%;
+}
+
+/* o b.o da cor do botão está aqui */
+.header-home ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    margin-right: -8px;
+    display: inline-block;
+    transition: all ease-in-out .5s;
+}
+
+.header-home ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.header-home :hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.text-gradient-home {
+    background-image: linear-gradient(45deg, #15417b, #1197a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-home {
+    flex-direction: column;
+    padding: 15px 0 15px 60px;
+    margin-left: 40px;
+    /* color: #333; */
+}
+
+.title-home h1 {
+    font-size: 2.7rem;
+}
+
+.title2-home {
+    background-image: linear-gradient(45deg, #15417b, #18d9eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.lista-menu-home li {
+    display: inline-block;
+    font-size: 1.3em;
+    padding-right: 50px;
+}
+
+.logout-home {
     border: 2px solid #022534;
     background-color: #022534;
     color: #fff !important;
     padding: 10px 30px 10px 30px;
     border-radius: 15px;
     font-weight: bold;
-    text-decoration: none !important; 
 }
 
-.menu li a {
-    display: inline-block;
-    text-decoration: none !important;
+
+.logout-home::before {
+    position: absolute;
+    color: #fff !important;
+    width: 100%;
+    height: 0 !important;
 }
 
-.botaologout li a {
-    text-decoration: none !important;
+.effect-home {
+    margin-right: 4rem;
+    border: none;
+    outline: 0 !important;
+    box-shadow: none !important;
+
+
+}
+
+
+.title-home h1 {
+    font-weight: bold;
+}
+
+.title-home h1 {
+    font-weight: 200;
 }

@@ -1,29 +1,25 @@
-import { TabContext, TabPanel } from '@material-ui/lab';
-import { AppBar, Box, Tab, Tabs } from '@mui/material';
-import React, { useState } from 'react'
+import { Box, Grid } from '@mui/material';
 import ListaPostagem from '../ListaPostagem/ListaPostagem';
+import { BarLoader } from 'react-spinners'
 
 function TabPostagem() {
 
-  const [value, setValue] = useState('1')
-  function handleChange(event: React.ChangeEvent<{}>, newValue: string){
-    setValue(newValue);
-  }
-
   return (
     <>
-      <TabContext value={value}>
-        <AppBar position="static" className="tabPost" style={{backgroundColor: '#06283d', color: 'white'}}>
-          <Tabs centered indicatorColor="secondary" onChange={handleChange} >
-            <Tab label="Postagens" value="1" style={{marginRight: '45px', color: 'white'}} className='tab1' />
-          </Tabs>
-        </AppBar>
-        <TabPanel value="1" >
+      <Grid xs={12}>
+        <Box>
+          <BarLoader
+            color="#168eb4"
+            height={7}
+            width='100%'
+          />
+        </Box>
+        <Box>
           <Box display="flex" flexWrap="wrap" justifyContent="center">
-            <ListaPostagem/>
+            <ListaPostagem />
           </Box>
-        </TabPanel>
-      </TabContext>
+        </Box>
+      </Grid>
     </>
   )
 }
