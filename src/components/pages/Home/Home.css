@@ -9,7 +9,7 @@
 
 .glass1 {
     background: rgba(157, 184, 209, 0);
-    box-shadow: 0 8px 32px 0 rgba(159, 173, 219, 0.37);
+    box-shadow: 0 23px 23px rgba(10, 67, 102, 0.25);
     backdrop-filter: blur( 12px );
     -webkit-backdrop-filter: blur( 12px );
     border-radius: 10px;
@@ -18,13 +18,13 @@
 }
 
 .titulo {
-    color: white !important;
+    color: black !important;
     font-weight: bold !important;
     font-size: 25px !important;
 }
 
 .subtitulo {
-    color: white !important;
+    color: black !important;
     font-weight: bold !important;
     font-size: 20px !important;
 }

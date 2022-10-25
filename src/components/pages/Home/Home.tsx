@@ -45,8 +45,9 @@ function Home() {
                 </Grid>
                 <Grid alignItems='center' xs={4} className='glass1'>
                     <Box paddingX={10}>
-                        <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao SolutiON!</Typography>
+                        <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao Soluti<span className='title2'>ON</span></Typography>
                         <Typography variant='h5' gutterBottom component='h5' align="center" className='subtitulo'>As conexões, começam aqui.</Typography>
+                        <br />
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={3}>
