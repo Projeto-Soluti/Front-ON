@@ -135,7 +135,7 @@ function ListaPostagem() {
               className="backgroundCardLista"
               avatar={
                 <>
-                  <Avatar src={usuario?.foto} style={{height:"50px", width:"50px"}} />
+                  <Avatar src={postagem.usuario?.foto} style={{height:"50px", width:"50px"}} />
                   <Typography>
                     {postagem.usuario?.nome}
                   </Typography>
