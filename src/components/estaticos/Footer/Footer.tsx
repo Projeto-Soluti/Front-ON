@@ -16,7 +16,7 @@ function Footer() {
     if (token != "") {
         footerComponent =
 
-            <section className="footer">
+            <section className="footer" style={{margin: 0}}>
                 <footer>
                     <div className="itensFooter">
                         <div>

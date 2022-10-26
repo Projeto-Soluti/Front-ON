@@ -26,6 +26,7 @@
     "react-redux": "7.2.5",
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.6",
     "react-toastify": "^9.0.8",
     "react-toggle-dark-mode": "^1.1.0",
     "react-use-localstorage": "3.5.3",

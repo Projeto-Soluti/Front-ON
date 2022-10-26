@@ -44,7 +44,7 @@ function ListaTema() {
 
   return (
     <>
-      <Container>
+      <Container style={{paddingTop:'100px', backgroundColor:'#eef1ff'}}>
         {/* mapeamento do array de temas, para recriar a estrutura inteira para cada tema existente */}
         {temas.map((tema) => (
           <Box m={2} key={tema.id}>
@@ -67,9 +67,7 @@ function ListaTema() {
                       <Button
                         variant="contained"
                         size="medium"
-                        style={{ backgroundColor: '#D8D8D8', fontWeight: 'bold', color: '#000' }} 
-
-                      >
+                        style={{ backgroundColor: '#D8D8D8', fontWeight: 'bold', color: '#000' }}>
                         Atualizar
                       </Button>
                     </Box>
