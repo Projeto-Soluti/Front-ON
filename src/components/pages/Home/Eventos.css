@@ -38,7 +38,7 @@
 .cardsolu2 {
     width: calc(34% - 22px);
     padding: 40px 12px;
-    margin: 0 30px;
+    margin: 0 230px;
     text-align: center;
     cursor: pointer;
     margin-bottom: 60px;
@@ -49,7 +49,6 @@
 }
 
 .alice-carousel__stage-item {
-    padding-left: 38%;
     width: 100%;
     height: 100%;
 }

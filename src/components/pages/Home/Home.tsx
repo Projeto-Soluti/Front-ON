@@ -37,14 +37,14 @@ function Home() {
     return (
         <>
             <Grid container direction='row' justifyContent='space-evenly' alignItems='center' className='backgroundHome spaceBetween'>
-                <Grid item xs={5}>
+                <Grid item xs={4}>
                     <Box>
                         <Eventos />
                     </Box>
                 </Grid>
                 <Grid alignItems='center' xs={5} className='glass1'>
                     <Box paddingX={10}>
-                        <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao Soluti<span className='title2'>ON</span></Typography>
+                        <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo à Soluti<span className='title2'>ON</span></Typography>
                         <Typography variant='h5' gutterBottom component='h5' align="center" className='subtitulo'>As conexões, começam aqui.</Typography>
                         <br />
                     </Box>
