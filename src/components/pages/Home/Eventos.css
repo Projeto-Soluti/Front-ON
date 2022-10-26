@@ -1,0 +1,55 @@
+.App2 {
+    margin-top: 5px;
+}
+
+.App2 h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background-color: #141b4e;
+}
+
+.App2 h2 span {
+    background-image: linear-gradient(45deg, #15417b, #1197a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.App2 h1 {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+
+.App2 h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #141b4e;
+}
+
+.cardsolu2 {
+    width: calc(34% - 22px);
+    padding: 40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alice-carousel__stage-item {
+    padding-left: 38%;
+    width: 100%;
+    height: 100%;
+}

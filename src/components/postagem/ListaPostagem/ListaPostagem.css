@@ -2,17 +2,12 @@
   display: flex;
   padding-top: 100px;
 }
-
 .text-decorator-none{
   text-decoration: none;
 }
 
 .cursor {
   cursor: pointer;
-}
-
-.backgroundCardLista {
-  background-color: #d1ebf07e;
 }
 
 /* From uiverse.io by @alexmaracinaru */
@@ -86,7 +81,7 @@
 }
 
 .deletarButton svg {
-  transform: translateX(-8px);
+  transform: translateX(-0px);
   transition: all 0.3s ease;
 }
 

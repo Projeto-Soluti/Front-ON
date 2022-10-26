@@ -147,7 +147,7 @@ function CadastroPostagem() {
 
   return (
     <>
-      <Container>
+      <Container style={{marginTop: '150px'}} >
         <form onSubmit={onSubmit}>
           <Typography
             variant='h3'

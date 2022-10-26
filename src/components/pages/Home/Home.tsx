@@ -5,12 +5,11 @@ import './Home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/token/TokenReducer';
-import useLocalStorage from 'react-use-localstorage';
 import ModalPostagem from '../../postagem/modalPostagem/ModalPostagem';
 import ModalTema from '../../tema/modalTema/ModalTema';
 import TabPostagem from '../../postagem/tabPostagem/TabPostagem';
 import { toast } from 'react-toastify';
-import Card from './Card';
+import Eventos from './Eventos';
 
 function Home() {
 
@@ -37,13 +36,13 @@ function Home() {
 
     return (
         <>
-            <Grid container direction='row' justifyContent='center' alignItems='center' className='backgroundHome spaceBetween'>
-                <Grid item xs={4}>
-                    <Box style={{ margin: '45px' }}>
-                        <Card />
+            <Grid container direction='row' justifyContent='space-evenly' alignItems='center' className='backgroundHome spaceBetween'>
+                <Grid item xs={5}>
+                    <Box>
+                        <Eventos />
                     </Box>
                 </Grid>
-                <Grid alignItems='center' xs={4} className='glass1'>
+                <Grid alignItems='center' xs={5} className='glass1'>
                     <Box paddingX={10}>
                         <Typography variant='h4' gutterBottom component='h4' align='center' className='titulo'>Bem vindo ao Soluti<span className='title2'>ON</span></Typography>
                         <Typography variant='h5' gutterBottom component='h5' align="center" className='subtitulo'>As conexões, começam aqui.</Typography>
